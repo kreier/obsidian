@@ -1,0 +1,3 @@
+A General Purpose Graphics Processing Unit ([[GPGPU]]) is a GPU that has additional features to use the large parallel processing power of a GPU for other purposes than rendering graphics. It became useful for machine learning and neuronal networks.
+## Alexnet
+One breakthrough application was the use of GPUs for image classification with Alexnet in 2016. It significantly increased the accuracy in the 
