@@ -1,1 +1,0 @@
-Produces a lot of graphics cards. Now market leader (team green) and most valuable company in the world. To program their [[GPGPU]] they use their proprietary [[CUDA]] language.
