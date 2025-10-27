@@ -6,7 +6,10 @@ This continues to be my personal Website. I started in 1999 with a few pages in 
 ## [[kreier.org]] 2018-2025
 With my new job at AISVN I started to create my own website to provide student material for my IB Physics course. In the end this turned out to be very time consuming!
 
-people.physik.hu-berlin.de/~kreier/
+## [people.physik.hu-berlin.de/~kreier/](people.physik.hu-berlin.de/~kreier/) 2000-2025
+This webspace is provided by my university. And since it is hosted in the **Institutrechenzentrum** with some ultrafast fiber internet connection (we do research, after all) this should serve all my purposes well.
 
-- **lacy.de** 2000-2003 [backup]()
-It was intended to be a combined site with some friends.
+- **lacy.de** 2000-2003 [backup](https://saiht.de/x/lacy) It was intended to be a combined site with some friends.
+- **saiht.net** 2002-2004 just a test, [backup saiht.de/x/saihtnet](https://saihtl.de/x/saihtnet)
+
+Please complete this list!
