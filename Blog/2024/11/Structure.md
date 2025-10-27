@@ -1,4 +1,8 @@
-I might have to use a folder.
+---
+date: 2024-11-21
+---
+
+I might have to use a folder. This is actually my third note in Obsidian from November 21st, 2024.
 
 And I can make lists:
 - First Point

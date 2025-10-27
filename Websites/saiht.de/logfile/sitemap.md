@@ -1,5 +1,5 @@
 ---
-created: 2007-08-12
+date: 2007-08-12
 ---
 The original of this page can be found at [https://saiht.de/legacy/logfeile/sitemap.html](https://saiht.de/legacy/logfeile/sitemap.html)
 
@@ -16,18 +16,18 @@ The original of this page can be found at [https://saiht.de/legacy/logfeile/site
 - Glossar 1
 - Logfeile 4
 - Subdomains 20
-#### [**Startseite**](https://saiht.de/legacy/rechts.html) enthält einige allgemeine Informationen und die entsprechenden Links zu den wichtigsten Seiten. ![](https://saiht.de/legacy/pic/level4.png)
+### [**Startseite**](https://saiht.de/legacy/rechts.html) enthält einige allgemeine Informationen und die entsprechenden Links zu den wichtigsten Seiten. ![](https://saiht.de/legacy/pic/level4.png)
 - [Impressum](https://saiht.de/legacy/impressum.html) - Das Impressum zu meiner Seite. ![](https://saiht.de/legacy/pic/level5.png)
 - [Hardware](https://saiht.de/legacy/hardware.html) - Hier wollte ich 2000 etwas zu meiner eigenen Hardware schreiben.![](https://saiht.de/legacy/pic/level5.png)
 
-#### [**Computer**](https://saiht.de/legacy/computer/computer.html) - einige Dinge rund um den Computer, die mich interessieren. (6) ![](https://saiht.de/legacy/pic/level6.png)
+### [**Computer**](https://saiht.de/legacy/computer/computer.html) - einige Dinge rund um den Computer, die mich interessieren. (6) ![](https://saiht.de/legacy/pic/level6.png)
 - [ATX](https://saiht.de/legacy/computer/atx.html) - Probleme der APM und ACPI Funktionen für ein 'wake up' unter Linux für einen Server@home ![](https://saiht.de/legacy/pic/level6.png)
 - [CDROM-Laufwerke](https://saiht.de/legacy/computer/cdrom.html) - zerstört durch das Motherboard. Teilweise irreparabel. ![](https://saiht.de/legacy/pic/level6.png)
 - [Miro GDM 1963 Festfrequenzmonitor](https://saiht.de/legacy/computer/gdm1963.html) - syncronisieren des Bildes auf 20" Festfrequenzer unter Windows und Linux ![](https://saiht.de/legacy/pic/level6.png)
 - [History](https://saiht.de/legacy/computer/history.html) - eine Kurzgeschichte meiner Erfahrungen mit dem Computer. ![](https://saiht.de/legacy/pic/level6.png)
 - [HTML](https://saiht.de/legacy/computer/html.html) - erstellte Webseiten, etwas Statistik und Geschichte. ![](https://saiht.de/legacy/pic/level6.png)
 
-#### [**Freizeit**](https://saiht.de/legacy/freizeit/freizeit.html) - was ich so in der Freizeit mache. (7) ![](https://saiht.de/legacy/pic/level6.png)
+### [**Freizeit**](https://saiht.de/legacy/freizeit/freizeit.html) - was ich so in der Freizeit mache. (7) ![](https://saiht.de/legacy/pic/level6.png)
 - [Fahrrad](https://saiht.de/legacy/freizeit/fahrrad.html) - Meine kleine Fahrradsammlung und einige Bilder von Ausflügen. ![](https://saiht.de/legacy/pic/level5.png)
 - [Motorrad](https://saiht.de/legacy/freizeit/motorrad.html) - Seit 2000 habe ich ein Motorrad, und damit hier auch ein Bild meiner Maschine. ![](https://saiht.de/legacy/pic/level5.png)
 - [Kanu](https://saiht.de/legacy/freizeit/kanu.html) - Seit 1995 stolzer Besitzer eines Kanus mit zu wenig Zeit für eine Kanutour. ![](https://saiht.de/legacy/pic/level6.png)
@@ -35,16 +35,16 @@ The original of this page can be found at [https://saiht.de/legacy/logfeile/site
 - [Tschechien](https://saiht.de/legacy/freizeit/tschechien.html) - Dieser Unterpunkt stellt einen kleines Highlight dar. Seit Ende 1996 bin ich regelmäßig im Elbsandsteingebirge kurz hinter der deutschen Grenze unterwegs. Bis auf eine Ausnahme war ich mit netten Freunden unterwegs. Daher kam die eine oder andere nette Geschichte zustande, sie ist hier festgehalten. Extern habe ich unter [tschechien.saiht.de](http://tschechien.saiht.de/) eine extra Seite mit gleichem Inhalt angelegt.![](https://saiht.de/legacy/pic/level6.png)
 - [Einzelevents](https://saiht.de/legacy/freizeit/einzelevents.html) - Eine lose Sammlung weiterer Meilensteine meines Lebens. ![](https://saiht.de/legacy/pic/level3.png)
 
-#### [**Geschichte**](https://saiht.de/legacy/geschichte/geschichte.html) - was sie uns lehrt und warum man besser aus ihr lernt. (6) ![](https://saiht.de/legacy/pic/level6.png)
+### [**Geschichte**](https://saiht.de/legacy/geschichte/geschichte.html) - was sie uns lehrt und warum man besser aus ihr lernt. (6) ![](https://saiht.de/legacy/pic/level6.png)
 - [Ägypten](https://saiht.de/legacy/geschichte/aegypten.html) - und seine Geschichte. Vornehmlich interessiert mich die Zeitrechnung. ![](https://saiht.de/legacy/pic/level3.png)
 - [Die Maya](https://saiht.de/legacy/geschichte/maya.html) - wie fortschrittlich war ihre Kultur tatsächlich? Stichworte Mayakalender und Astronomie. ![](https://saiht.de/legacy/pic/level2.png)
 - [Wat is Angkor Wat?](https://saiht.de/legacy/geschichte/angkor.html) - jener Tempel, von einem 'Michelangelo des Altertums' erbaut, zeugt von welchen erreichten Fortschritten jener Zivilisation? ![](https://saiht.de/legacy/pic/level3.png)
 - [Radiocarbonmethode](https://saiht.de/legacy/geschichte/c14.html) - zur Datierung ärcheologischer Fundstücke. Wie gut ist diese Methode? Wie genau? Welche Probleme ergeben sich? ![](https://saiht.de/legacy/pic/level4.png)
 - [Entwickeln kritischen Denkens in der Schule](https://saiht.de/legacy/projekte/deutsch.html) - ein Kurzabriss meines Lesestoffes in den Klassen 4 bis 8 in der DDR mit Kommentar. ![](https://saiht.de/legacy/pic/level6.png)
   
-#### [**Physik**](https://saiht.de/legacy/physik/physik.html) - eine Übersichtsseite zu meinem Studium zum Diplomphysiker. ![](https://saiht.de/legacy/pic/level4.png)
+### [**Physik**](https://saiht.de/legacy/physik/physik.html) - eine Übersichtsseite zu meinem Studium zum Diplomphysiker. ![](https://saiht.de/legacy/pic/level4.png)
   
-#### [**Projekte**](https://saiht.de/legacy/projekte/projekte.html) - eine Auswahl an Projekten, mit denen ich mich sporadisch beschäftige. (15) ![](https://saiht.de/legacy/pic/level6.png)
+### [**Projekte**](https://saiht.de/legacy/projekte/projekte.html) - eine Auswahl an Projekten, mit denen ich mich sporadisch beschäftige. (15) ![](https://saiht.de/legacy/pic/level6.png)
 - 01. [Die Allgemeinbildung erweitern,](https://saiht.de/legacy/projekte/01bibellesen.html) indem man die Bibel liest. Ein systematisches Vorgehen ist empfehlenswert. ![](https://saiht.de/legacy/pic/level6.png)
 - 02. [Kann Leben durch Zufall entstehen?](https://saiht.de/legacy/projekte/02leben.html) Stellt damit eine Grundlage der Evolution in Frage. Die Antwort ist so schnell gefunden wie trivial. Warum stopert dennoch niemand darüber? ![](https://saiht.de/legacy/pic/level5.png)
 - 03. [Wann wurde Jesus geboren?](https://saiht.de/legacy/projekte/03jesus.html) Viele wissen, das Weihnachten falsch ist. Ich möchte die Antworten begründen. In Lexika wird oft das Jahr 4 v.u.Z. angegeben. Mit einfachen Hausmitteln läßt sich prüfen, das dies auch falsch ist. ![](https://saiht.de/legacy/pic/level3.png)
@@ -60,7 +60,7 @@ The original of this page can be found at [https://saiht.de/legacy/logfeile/site
 - 13. [Zeitleiste der Menschheitsgeschichte](https://saiht.de/legacy/projekte/13zeitleiste.html) - Diese Onlinevariante soll nur Grundlage einer 6-Meter Papiervariante werden. ![](https://saiht.de/legacy/pic/level5.png)
 - 14. [Wie lang ist ein biblischer Schöpfungtag?](https://saiht.de/legacy/projekte/14tag.html) Kreationisten sagen: "24 Stunden!" Der Bericht in 1. Mose sagt etwas anderes, der gesunde Menschenverstand, andere Stellen der Bibel und auch die Wissenschaft ebenso. ![](https://saiht.de/legacy/pic/level3.png)
   
-#### [**Urlaub**](https://saiht.de/legacy/urlaub/urlaub.html) - Wo ich schon überall im Urlaub war. (15) ![](https://saiht.de/legacy/pic/level6.png)
+### [**Urlaub**](https://saiht.de/legacy/urlaub/urlaub.html) - Wo ich schon überall im Urlaub war. (15) ![](https://saiht.de/legacy/pic/level6.png)
 - **2007** An der Ostküste der [USA.](https://saiht.de/legacy/urlaub/2007_usa.html) ![](https://saiht.de/legacy/pic/level1.png)
 - **2006** Wandern in [Italien am Gardasee.](https://saiht.de/legacy/urlaub/2006_italy.html) ![](https://saiht.de/legacy/pic/level4.png)
 - **2005** Motorradurlaub in [Osteuropa.](https://saiht.de/legacy/urlaub/2005_osteuropa.html) ![](https://saiht.de/legacy/pic/level6.png)
@@ -76,9 +76,9 @@ The original of this page can be found at [https://saiht.de/legacy/logfeile/site
 - **1996** Eine Woche Fahrradurlaub in [Erlbach.](https://saiht.de/legacy/urlaub/1996_erlbach.html) ![](https://saiht.de/legacy/pic/level5.png)
 - **1996** Mein erster Winterurlaub. Am Finkberg nahe Mayrhofen in [Östereich.](https://saiht.de/legacy/urlaub/1996_austria_winter.html) Mit Snowboard. ![](https://saiht.de/legacy/pic/level2.png)
   
-#### [**Glossar**](https://saiht.de/legacy/glossar/glossar.html) - sehr unvollständige und sinnlose Sammlung unwichtiger Begriffe. ![](https://saiht.de/legacy/pic/level6.png)
+### [**Glossar**](https://saiht.de/legacy/glossar/glossar.html) - sehr unvollständige und sinnlose Sammlung unwichtiger Begriffe. ![](https://saiht.de/legacy/pic/level6.png)
   
-#### [**Logfeile**](https://saiht.de/legacy/logfeile/logfeile.html) - wie sich diese Seite (und ich) im Laufe der Jahre entwickelt haben. ![](https://saiht.de/legacy/pic/level6.png)
+### [**Logfeile**](https://saiht.de/legacy/logfeile/logfeile.html) - wie sich diese Seite (und ich) im Laufe der Jahre entwickelt haben. ![](https://saiht.de/legacy/pic/level6.png)
 - [Wohnung](https://saiht.de/legacy/logfeile/wohnung.html) - Liste meiner bisherigen Wohnorte. ![](https://saiht.de/legacy/pic/level5.png)
 - [Gruppe](https://saiht.de/legacy/logfeile/gruppe.html) - Ein paar Gruppenfotos der letzten Jahre.
 - [Sitemap](https://saiht.de/legacy/logfeile/sitemap.html) - Ebenjene Seite du dir gerade ansiehst. ![](https://saiht.de/legacy/pic/level6.png)
