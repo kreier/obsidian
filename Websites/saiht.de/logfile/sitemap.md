@@ -5,17 +5,6 @@ The original of this page can be found at [https://saiht.de/legacy/logfeile/site
 
 ## Sitemap für www.saiht.de
 
-3 + 6 + 7 + 6 + 1 + 15 + 15 + 1 + 4 + 20 = 58 + 20 = 78
-- Startseite 3
-- Computer 6
-- Freizeit 7
-- Geschichte 6
-- Physik 1
-- Projekte 15
-- Urlaub 15
-- Glossar 1
-- Logfeile 4
-- Subdomains 20
 ### [**Startseite**](https://saiht.de/legacy/rechts.html) enthält einige allgemeine Informationen und die entsprechenden Links zu den wichtigsten Seiten. ![](https://saiht.de/legacy/pic/level4.png)
 - [Impressum](https://saiht.de/legacy/impressum.html) - Das Impressum zu meiner Seite. ![](https://saiht.de/legacy/pic/level5.png)
 - [Hardware](https://saiht.de/legacy/hardware.html) - Hier wollte ich 2000 etwas zu meiner eigenen Hardware schreiben.![](https://saiht.de/legacy/pic/level5.png)
@@ -119,3 +108,16 @@ The original of this page can be found at [https://saiht.de/legacy/logfeile/site
 - [wohnung.saiht.de](http://wohnung.saiht.de/) - Liste der Orte wo ich gewohnt tun habe
 - [kbapmup.saiht.de](http://kbapmup.saiht.de/) - dito auf russisch
 - [wap.saiht.de](http://wap.saiht.de/) - Spezielle Version für mobile Endgeräte mit geringer Bildschirmauflösung
+
+### Summary 2025
+3 + 6 + 7 + 6 + 1 + 15 + 15 + 1 + 4 + 20 = 58 + 20 = 78
+- Startseite 3
+- Computer 6
+- Freizeit 7
+- Geschichte 6
+- Physik 1
+- Projekte 15
+- Urlaub 15
+- Glossar 1
+- Logfeile 4
+- Subdomains 20
