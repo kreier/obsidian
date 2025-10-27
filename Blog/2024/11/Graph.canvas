@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"96d6da9ee6d4ab5d","type":"text","text":"The center","x":-140,"y":-180,"width":250,"height":60},
+		{"id":"f713dc89a439373e","x":-140,"y":-53,"width":250,"height":60,"type":"text","text":"Follows"}
+	],
+	"edges":[
+		{"id":"c0bab4b25535d64e","fromNode":"96d6da9ee6d4ab5d","fromSide":"bottom","toNode":"f713dc89a439373e","toSide":"top"}
+	]
+}
