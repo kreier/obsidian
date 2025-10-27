@@ -1,17 +1,17 @@
 ---
-created: 2023-06-10
+date: 2023-06-10
 tags:
   - projects
   - timeline
 ---
-The idea started for me already in the 90s of the last century or millennia. But it ended with a few small sketches on paper, and the purchase of a 10m long "endless" paper roll to make a physical long version. It's one of my long term [[Projects]].
+The idea started for me already in the 90s of the last century or millennia. But it only progressed to a few small sketches on paper, and the purchase of a 10m long "endless" paper roll to make a physical long version. It's one of my long term [[Projects]].
 ## Paper version as a book 2008
 In 2008 I got "*Knaur's Zeittafel der Weltgeschichte - Den letzten 6000 Jahren auf der Spur*" with a total length of 7 meters. It is so large that it takes considerable space to open and access the information. As far as I can tell it is a German translation of [Adams Synchronological Chart or Map of History](https://en.wikipedia.org/wiki/Adams_Synchronological_Chart_or_Map_of_History) from 1871 (more than 150 years ago). In wikimedia is [a scan of 40445x4309 pixel](https://commons.wikimedia.org/wiki/File:Adams_Synchronological_Chart,_1881.jpg) of this masterpiece. And there you would find a link to the 700 Megapixel JPEG 2000 scan file. Here are links to the [two German editions](https://www.amazon.de/-/en/Alex-Klubertanz/dp/3828908519/ref=monarch_sidesheet) at [amazon.de](https://www.amazon.de/-/en/dp/3829017057/ref=monarch_sidesheet).
 
 ![Adams Chart](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Adams_Synchronological_Chart%2C_1881.jpg/1280px-Adams_Synchronological_Chart%2C_1881.jpg)
 
 ## v1.0 First digital version in February 2009
-I soon realized that the large size of the "Zeittafel" allows it to have a lot of information. But it is also its weakness - it is just too large to comprehend. Or to view at a glance. No matter how large you make it, you can't put in all the information you want. There is always something more to study, discover and integrate. So I started with a target size decision first: Three landscape A4 papers should contain the last 6000 years. This automatically also determines the resolution.
+I soon realized that the large size of the "Zeittafel" allows it to have a lot of information. But it is also its weakness - it is just too large to comprehend. Or to view at a glance. No matter how large you make it, you can't put in all the information you want. There is always something more to study, discover and integrate. So I started with a target size decision first: Three landscape A4 papers should contain the last 6000 years. This automatically determines the resolution.
 
 ![timeline 2009](https://raw.githubusercontent.com/kreier/timeline/4.6/docs/zeitleiste2009full.png)
 
