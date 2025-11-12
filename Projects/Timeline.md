@@ -4,7 +4,7 @@ tags:
   - projects
   - timeline
 ---
-The idea started for me already in the 90's of the last century or millennia. But it only progressed to a few small sketches on paper, and the purchase of a 10m long "endless" paper roll to make a physical long version. It's one of my long term [[Projects overview]].
+The idea started for me already in the 90's of the last century or millennia. But it only progressed to a few small sketches on paper, and the purchase of a 10m long "endless" paper roll to make a physical long version. It's one of my long term [[My Projects]].
 ## Paper version as a book 2008
 In 2008 I got "*Knaur's Zeittafel der Weltgeschichte - Den letzten 6000 Jahren auf der Spur*" with a total length of 7 meters. It is so large that it takes considerable space to open and access the information. As far as I can tell it is a German translation of [Adams Synchronological Chart or Map of History](https://en.wikipedia.org/wiki/Adams_Synchronological_Chart_or_Map_of_History) from 1871 (more than 150 years ago). In wikimedia is [a scan of 40445x4309 pixel](https://commons.wikimedia.org/wiki/File:Adams_Synchronological_Chart,_1881.jpg) of this masterpiece. And there you would find a link to the 700 Megapixel JPEG 2000 scan file. Here are links to the [two German editions](https://www.amazon.de/-/en/Alex-Klubertanz/dp/3828908519/ref=monarch_sidesheet) at [amazon.de](https://www.amazon.de/-/en/dp/3829017057/ref=monarch_sidesheet).
 
