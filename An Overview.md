@@ -6,7 +6,7 @@ Over 26 years I have several websites. By the end of 2025, only 3 of these are s
 - [people.physik.hu-beriln.de/~kreier/](https://people.physik.hu-berlin.de/~kreier/) since 2000, my page related to my study of physics at the **Humboldt Universität von Berlin**, see 
 
 More details are listed and linked in the [[My Websites]] page. And for each site I made a separate history page: [[saiht.de]] 1999-2025, kreier.org, people.physik.hu/berlin.de/~kreier/, saiht.org, hofkoh.de, stemfair.org, mypdesign.org, lacy.de, saiht.net (2002-2004).
-## [[Projects overview]]
+## [[My Projects]]
 While learning about LLMs I tried to run a local cluster with [[GPGPU]]s from [[Nvidia]], using their [[CUDA]] cores with ollama.
 ## [[My Blog]]
 Not everything is a project, or belongs to the Travel category. But it's worth remembering, to reflect on one's course in life. So I write down some notes about it.
@@ -20,4 +20,4 @@ j^\mu = \sum_{i=1}^N \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\varphi
 $$
 Of course it fulfils the [Continuity equation](https://en.wikipedia.org/wiki/Continuity_equation) :-)
 
-PS: This is the Overview page, it just copies the invisible index page you can access if you click on **Obsidian** in the top left corner. Done on [[2025-10-27 Extend projects]]
+PS: This is the Overview page, it just copies the invisible index page you can access if you click on **Obsidian** in the top left corner. Done on [[2025-10-27 Extend projects]]. And following the steps described in [[Obsidian]].

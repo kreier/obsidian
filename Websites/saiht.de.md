@@ -1,6 +1,6 @@
 This is my personal website since 1999.
 ## Current structure
-I have a landing page that leads to the 4 categories blog ([[My Blog]]), travel and projects ([[Projects overview]]).
+I have a landing page that leads to the 4 categories blog ([[My Blog]]), travel and projects ([[My Projects]]).
 ### Blog
 This will take some time to finish. Maybe it's not wise to write your own MarkDown parser. Let's see.
 ### Travel
