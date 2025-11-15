@@ -1,3 +1,7 @@
+---
+title: Projects2
+---
+
 This is a manually curated list of projects. The folder might be more up to date.
 ## 2025
 - Obsidian

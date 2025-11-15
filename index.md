@@ -1,7 +1,7 @@
 ---
 title: Digital Garden
 ---
-This vault should help me to organize several of my [[Projects]] and [[Websites]], ideas and questions. Below is an attempt to a structured and organized short overview:
+This vault should help me to organize several of my or [[Projects]] [[Projects]] and [[Websites]], ideas and questions. Below is an attempt to a structured and organized short overview:
 ## [[Websites]] 1999-2025
 Over the last 26 years I had several websites. By the end of 2025, only 3 of these are still active:
 - [saiht.de](https://saiht.de) since 1999, my personal page, see [[saiht.de]]
