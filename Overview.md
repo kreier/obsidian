@@ -1,6 +1,3 @@
----
-title: Digital Garden
----
 This vault should help me to organize several of my [[Projects]] and [[Websites]], ideas and questions. Below is an attempt to a structured and organized short overview:
 ## [[Websites]] 1999-2025
 Over the last 26 years I had several websites. By the end of 2025, only 3 of these are still active:
@@ -26,3 +23,5 @@ $$
 j^\mu = \sum_{i=1}^N \frac{\delta\mathcal{L}}{\delta(\partial_\mu\phi_i)}\varphi_i \quad,\quad \varphi_i := \left.\frac{\partial\phi_i}{\partial\alpha}\right|_{\alpha=0}
 $$
 Of course it fulfils the [Continuity equation](https://en.wikipedia.org/wiki/Continuity_equation) :-)
+
+PS: This is the Overview page, it just copies the invisible index page you can access if you click on **Obsidian** in the top left corner. Done on [[2025-10-27 Extend projects]]. And following the steps described in [[Obsidian]].

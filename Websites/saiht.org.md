@@ -1,0 +1,1 @@
+This website started in 2008 with the discovery of an affordable provider in Germany that included a database for just 1.39 Euro per month. And it included the registration fee for the domain name. With the database I could try out PHP software like WordPress or Joomla.
