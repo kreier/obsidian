@@ -1,8 +1,11 @@
+---
+title: saiht.de
+---
 This is my personal website since 1999.
 ## Current structure
 I have a landing page that leads to the 4 categories blog ([[Blog]]), travel and projects ([[Projects]]).
 ### Blog
-This will take some time to finish. Maybe it's not wise to write your own MarkDown parser. Let's see.
+This will take some time to finish. Maybe it's not wise to write your own Markdown parser. Let's see.
 ### Travel
 As seen in the [[sitemap]] attempt from 2007 with already 15 pages dedicated to traveling, this will take a considerable amount of time to actually make a good documentation. I probably need a good interface for editing. Instagram makes it easier with the pictures, but even there we don't post all pictures of all travels.
 ### Projects

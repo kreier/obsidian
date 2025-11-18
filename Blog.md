@@ -1,3 +1,7 @@
+---
+title: Blog
+---
+
 A combination of a digital diary, blog, several ToDo lists and a log file into (hopefully) only **one** cohesive project.
 ## 2025
 - [[2025-10-21 Quartz 4 and Github]] Restart blogging with GitHub backup and Quartz v4 publishing.

@@ -1,5 +1,5 @@
 ---
-title: Projects2
+title: Projects
 ---
 
 This is a manually curated list of projects. The folder might be more up to date.

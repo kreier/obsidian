@@ -1,3 +1,7 @@
+---
+title: Websites
+---
+
 Over the years I created a few websites. And in time I had to consolidate some, and save the content in a subfolder for documentation. My goal of 2025 is to have only [saiht.de](https://saiht.de) available for personal information and [kreier.org](https://kreier.org) for work related information and projects.
 ## Current Domains
 Here is the list of websites I owned over the years.
