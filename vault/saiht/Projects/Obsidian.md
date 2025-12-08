@@ -7,3 +7,8 @@ There is also a second static version, that needs to be generated with node.js o
 - Create an updated static site version with `npx quartz build --serve`
 - Check it on `http://localhost:8080`
 - Upload the content of the `public` folder with **FileZilla**
+## Update Quartz
+Sometimes there are some updates in Quartz that should be included in the obsidian repository. Here are the 3 steps:
+- From command line: `npx quartz update`
+- `npx quartz sync`
+- `npx quartz build --serve`
