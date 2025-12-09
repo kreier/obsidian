@@ -28,7 +28,9 @@ It's slightly raining again. The second wedding part at Thai's parents house is 
 ## 11-02 The long journey to Lũng Cú 496.8 km
 In the morning I can finally meet with Markus at a Cafe. We're both in Vietnam since 2016, but never actually met. With the exeption of a coincidence in Quy Nhon in August 2025. Hanoi and Saigon are far away and we have limited time to visit each others cities.
 
-Minh's family is still in Hanoi, but leaving for Nha Trang from the airport at 2:00 PM. With a better helmet I pick her up at her sisters house, and we start the journey to Hà Giang. One hour in hour journey and out of Hà Nội the rain finally stops. It get's dark at 5:30, and we continue until 9:00 PM. Some 150 kilometers are still to go to and continue to 
+Minh's family is still in Hanoi, but leaving for Nha Trang from the airport at 2:00 PM. With a better helmet I pick her up at her sisters house, and we start the journey to Hà Giang. With leaving 2:00 pm from the airport we might be in Lũng Cú at 11:00 pm, if there are no stops, good streets etc. Well, it will take significantly longer, but we'll make it safe. 
+
+One hour in hour journey and out of Hà Nội the rain finally stops. It get's dark at 5:30, and we continue until 9:00 PM. Some 150 kilometers are still to go to and continue to 
 
 Should we stop for a little Pho or Com? No, we continue into the mountains. Refill the gasoline one last time, since the stations will close at 10:00 PM and we still have a long way to go.
 
@@ -50,5 +52,25 @@ The warning of the Tyhoon pops up in Google Maps, and from Hue on it starts to r
 At 6:00 AM the streets are busy again, the sun is slowly rising and with no rain will dry my soaked clothes in just 30 minutes on the road.
 
 Yet some streets have fallen trees from left to right. For hours it is a journey through storm damage territory. Roofs are missing, advertisement boards are toppled over, power lines and telephone lines. Some streets have all planted trees lying on the street. Near Quy Nhon it is damage whereever one looks. They are out of water for a day, and electricity in parts of the city will need another 3 days.
+
+At almost midnight I arrive back in district 7. It's been 5275.5 kilometers!
 ## 11-08 Circuit assembly on Saturday
 I made it back in time, so I can attend the English circuit assembly on the weekend. Yay!
+
+| date  | night at                          | kilometers | day |
+| ----- | --------------------------------- | ---------- | --- |
+| 10-24 | Mang Den                          | 624.1      | 1   |
+| 10-25 | Huế                               | 420.4      | 2   |
+| 10-26 | Hanoi                             | 650.4      | 3   |
+| 10-27 | Hanoi                             | 30.1       | 4   |
+| 10-28 | Sapa                              | 369.9      | 5   |
+| 10-29 | Fansipan                          | 21.1       | 6   |
+| 10-30 | Hanoi                             | 385.4      | 7   |
+| 10-31 | Wedding                           | 0          | 8   |
+| 11-01 | Hanoi                             | 50         | 9   |
+| 11-02 | Lung Cu                           | 496.8      | 10  |
+| 11-03 | Phố Cổ, Đồng Văn                  | 39.1       | 11  |
+| 11-04 | Cốc Pảng Du Gia Panorama Ecolodge | 114.9      | 12  |
+| 11-05 | Vinh                              | 614.8      | 13  |
+| 11-06 | Quảng Ngãi                        | 636.1      | 14  |
+| 11-07 | Ho Chi Minh                       | 822.4      | 15  |
