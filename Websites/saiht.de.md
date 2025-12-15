@@ -3,7 +3,7 @@ title: saiht.de
 ---
 This is my personal website since 1999.
 ## Current structure
-I have a landing page that leads to the 4 categories blog ([[Blog]]), travel and projects ([[Projects]]).
+I have a landing page that leads to the 4 categories blog ([[About the blog]]), travel and projects ([[My Projects]]).
 ### Blog
 This will take some time to finish. Maybe it's not wise to write your own Markdown parser. Let's see.
 ### Travel
