@@ -1,10 +1,6 @@
----
-title: Projects
----
-
-This is a manually curated list of projects. The folder might be more up to date.
+This list is manually, the folder might be more up to date. Many are found on GitHub.
 ## 2025
-- Obsidian
+- [[Obsidian]]
 - Blog
 - Travel on saiht.de in English
 ## 2024
