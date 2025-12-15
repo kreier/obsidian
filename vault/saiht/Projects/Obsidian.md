@@ -12,3 +12,5 @@ Sometimes there are some updates in Quartz that should be included in the obsidi
 - From command line: `npx quartz update`
 - `npx quartz sync`
 - `npx quartz build --serve`
+## Statistics of this Obsidian vault
+Some first steps with Obsidian date back to [[2024-11-21 First use of Obsidian]], but I actually started the current version in combination with Quartz 4.0 on [[2025-10-27 Extend projects and official start day]] on my first day of study while being in Hanoi.

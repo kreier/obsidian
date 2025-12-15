@@ -1,7 +1,7 @@
 ---
 title: Projects3
 ---
-This is a manually curated list of projects. The folder might be more up to date. This file is index in the /Projects folder and has a tag "title" with content "Projects". Not to be messed with [[Projects]] itself. [[Projects]]
+This is a manually curated list of projects. The folder might be more up to date. This file is index in the /Projects folder and has a tag "title" with content "Projects". Not to be messed with [[My Projects]] itself. [[My Projects]]
 ## 2025
 - Obsidian
 - Blog
