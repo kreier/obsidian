@@ -1,4 +1,4 @@
-In summer 2016 I arrived in Saigon and started teaching at the IGSHCMC (International German School Ho Chi Minh City). Soon I was conducting a woodworking workshop as ASA - after school activity. The more we learned about wood and tools, the more the idea of a treehouse at the school property became a reality. And of course I had my experience from the [[Hofkoh treehouse]] project.
+In summer 2016 I arrived in Saigon and started teaching at the IGSHCMC (International German School Ho Chi Minh City). Soon I was conducting a woodworking workshop as ASA - after school activity. The more we learned about wood and tools, the more the idea of a treehouse at the school property became a reality. And of course I had my experience from the [[Treehouse in Hofkoh]] project.
 ## October 2016
 In a speedrun we build a shelf with students, here is the video link:
 
