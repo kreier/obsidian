@@ -25,8 +25,9 @@ There are two related projects to hold the generated PDF files, linked with the 
 - https://timeline25.github.io/
 
 ### Tripitaka
-Repository at [https://github.com/kreier/tripitaka](https://github.com/kreier/tripitaka) and website at [https://kreier.github.io/tripitaka/](https://kreier.github.io/tripitaka/)
+The repository at [https://github.com/kreier/tripitaka](https://github.com/kreier/tripitaka) and website at [https://kreier.github.io/tripitaka/](https://kreier.github.io/tripitaka/).
+
 Living here in Asia I have some contact to the Buddhist religion. If the Bible is the foundation for Christian religions, where can we find the teachings of Buddha? I tried to quantize the writings of the Tripitaka and compare it to the Bible, hence this project.
 
 <img src="https://kreier.github.io/tripitaka/size_tripitaka.png" width="49%"> <img src="https://kreier.github.io/tripitaka/size_kjv.png" width="49%">
-Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on **7013 pages**. The Bible has 66 books with 1189 chapters that in the KJV could be printed on **1062 pages**. The Tripitaka is therefore roughly **6.6x as large**. Not that many people actually read the content of the baskets and Pitaka's.
+Here the short result: The three baskets have 2782 books and 5273 chapters that could be printed on **7013 pages**. The Bible has 66 books with 1189 chapters that in the KJV could be printed on **1062 pages**. The Tripitaka is therefore roughly **6.6x as large**. Not that many people actually read the content of the baskets and Pitaka's. See [[Tripitaka]].

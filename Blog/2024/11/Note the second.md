@@ -1,7 +1,6 @@
 ---
 date: 2024-11-21
 ---
-
 Yes, this is my second note. I can have several vaults? And log into one or the other? Have a non-iCloud synced one? Ok, I’m fine for now.
 ## Alternative?
 What, this could replace my Google Drive note taking solution? How well will this work? For how many years? It could replace Docs and Sheets? Let’s see!

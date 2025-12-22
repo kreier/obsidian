@@ -1,4 +1,4 @@
-Organizing your thoughts, ideas, projects and notes is an ongoing task for many of us. Galilei took notes of the moons of Jupiter he discovered, and the names still link back to him. He was not the first to observe them, but the first to write down notes about it. And so the improved [Jupyter](https://en.wikipedia.org/wiki/Project_Jupyter) notebook format from 2011 with Python support resembles his original pursuit.
+Organizing your thoughts, ideas, projects and notes is an ongoing task for many of us. Galilei took notes of the moons of Jupiter he discovered. He was not the first to observe them, but the first to write down notes about it. And so the improved [Jupyter](https://en.wikipedia.org/wiki/Project_Jupyter) notebook format from 2011 with Python support resembles his original pursuit.
 ## Local vault
 The vault I use is the `content` folder inside my quartz repository. The updated content is found on [kreier.github.io/quartz](https://kreier.github.io/quartz). This is rendered each time I push a commit to the repository, running with GitHub Actions.
 ## Static version at saiht.de/obsidian
@@ -13,4 +13,6 @@ Sometimes there are some updates in Quartz that should be included in the obsidi
 - `npx quartz sync`
 - `npx quartz build --serve`
 ## Statistics of this Obsidian vault
-Some first steps with Obsidian date back to [[2024-11-21 First use of Obsidian]], but I actually started the current version in combination with Quartz 4.0 on [[2025-10-27 Extend projects and official start day]] on my first day of study while being in Hanoi.
+Some first steps with Obsidian date back to [[First use of Obsidian]], but I actually started the current version in combination with Quartz 4.0 on October 27th, 2025 with [[Official start of my study at Su Pham and Extension of a few projects]] on my first day of study while being in Hanoi. Some local statistics is immediately available with the novel word count. I installed this one on December 13, 2025, with [[Novel Word Count and Quartz Update]] from Saigon.
+
+- 2025/12/22 14,422 words, 54 minutes to read
