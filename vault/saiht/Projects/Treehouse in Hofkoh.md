@@ -1,4 +1,4 @@
-This treehouse project started with an idea from my neighbor.
+This treehouse project started with an idea from my neighbour.
 
 ## 2012 Idea
 
