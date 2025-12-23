@@ -48,6 +48,8 @@ The story of their photographer is not less impressive. One includes a bicycle j
 Sunrice pictures of the valley in front of the Du Gia Panorama Ecolodge, and having good and bad roads to breakfast Banh Cuon, where I have to leave for the road. The others will catch a plane later the day.
 ## 11-06 Approaching Typhoon Kalmaegi, stopping in Quảng Ngãi 636.1 km
 The warning of the Tyhoon pops up in Google Maps, and from Hue on it starts to rain, never to stop. Some streets in Danang are already flooded. At about 8:00 PM the gas stations are closed near Quảng Ngãi. All shops are closed, the streets are empty and deserted. Many hotels are closed as well, storefronts are packed for storm and rain. I have to stop a little earlier, but its probably better and safer.
+
+![[2025-11-06 Kalmaegi.jpeg]]
 ## 11-07 Journey through storm damage territory, back to Saigon 822.4 km
 At 6:00 AM the streets are busy again, the sun is slowly rising and with no rain will dry my soaked clothes in just 30 minutes on the road.
 
