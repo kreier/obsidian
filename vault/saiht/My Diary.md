@@ -4,7 +4,7 @@ One of the building blocks of modern society is certainly the invention of the w
 
 Here are the links to each year, highlights and statistics follow below.
 ## 2020s
-2020, [[2021]], 2022, [[2023]], [[2024]], [[2025]], [[2026]]
+2020, [[2021]], [[2022]], [[2023]], [[2024]], [[2025]], [[2026]]
 ## 2010s
 
 ## 2000s
@@ -14,7 +14,7 @@ Here are the links to each year, highlights and statistics follow below.
 ## 1980
 
 ## 1970s
-[[1975]], [[1976]]
+[[1975]], [[1976]], [[1977]]
 ## Statistics
 By the end of 2025 I have lived 18,302 days. Of these I have already documented 5 days.
 
