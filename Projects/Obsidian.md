@@ -19,7 +19,7 @@ The first checks for updates in Quartz and downloads updates to the codebase fro
 Some first steps with Obsidian date back to [[First use of Obsidian]], but I actually started the current version in combination with Quartz 4.0 on October 27th, 2025 with [[Official start of my study at Su Pham and Extension of a few projects]] on my first day of study while being in Hanoi. Some local statistics is immediately available with the novel word count. I installed this one on December 13, 2025, with [[Novel Word Count and Quartz Update]] from Saigon.
 
 - 2025/12/22 14,422 words, 54 minutes to read
-- 2025/12/25 18,013 words, 1h07 to read
+- 2025/12/25 19,069 words, 1h11 to read
 
 ## Automated statistics
 The Novel Word Count plugin is quite helpful when working with Obsidian, but I have a few more places where I keep my diary entries and would like to have more statistics. It is partly inspired by Github itself. It gives a nice graphical overview of the contribution frequency for a period of a year, including each day. For example, 8 years at Github look like this:
