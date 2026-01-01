@@ -1,7 +1,7 @@
 ---
 title: Digital Garden
 ---
-This vault is another attempt to document and structure some of [[My Projects|my projects]], [[My Websites|websites]], smaller events and ideas from [[About the blog|blog]] and a general overview of events in my life from [[My Diary|my diary]] plus some experiences in my [[Leisure|leisure time]] into **one** cohesive place. And of course include some [[Travel history|travel stories]]. As of 2026/01/01 this vault has 91 files with a total of 38807 words that would take 2h26 to read.
+This vault is another attempt to document and structure some of [[My Projects|my projects]], [[My Websites|websites]], smaller events and ideas from [[About the blog|blog]] and a general overview of events in my life from [[My Diary|my diary]] plus some experiences in my [[Leisure|leisure time]] into **one** cohesive place. And of course include some [[Travel history|travel stories]]. As of 2026/01/01 this vault has 91 files with a total of 38831 words that would take 2h26 to read.
 
 Here are a few highlights from the 5 categories:
 ## [[My Projects]]
@@ -20,7 +20,9 @@ More details are listed and linked in the [[My Websites]] page. And for each sit
 
 ## [[Travel history]]
 It is good from time to time to reflect on the good things one received in life. That is certainly true for journeys to remote places and time with friends. Both the travel itself as time remembering can fill us with gratitude.
+
 <img src="Diary/files/1x1.png" width="20%"><img src="Travel/files/2026-01-01_travelhistory.png" width="60%">
+
 Documenting my travels was already a part of my first edition of [[saiht.de]] in 1999. For the trip to Asia in 1998 I bought a book with black pages, since the contrast to the images let them appear more vibrant. A lot has happened since then.
 ## [[About the blog]]
 Not everything is a **project**, or belongs to the **travel** category. But it's worth remembering, to reflect on one's course in life. So I write down some notes about it.
