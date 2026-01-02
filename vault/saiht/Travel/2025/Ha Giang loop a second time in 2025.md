@@ -56,4 +56,5 @@ In a Google sheet I noted the distance traveled with my bike each day since leav
 | 11-05 | Vinh                              |      614.8 | 13  |
 | 11-06 | Quảng Ngãi                        |      636.1 | 14  |
 | 11-07 | Ho Chi Minh                       |      822.4 | 15  |
+
 This was the first table integrated in my notes like that. Maybe I can find more for other journeys? Just for documentation, and later reference. The total journey was 5275.5 kilometers!
