@@ -2,7 +2,7 @@
 created: 2025-10-24
 updated: 2025-10-26
 ---
-End of October was the wedding of Thai and Tram in Hanoi. Right thereafter a group wanted to do a tour of the Hà Giang loop. So I planned to go to Hanoi by bike and have my own motorbike available in the mountains. Events leading up to this journey made it all a little more time constrained.
+![[2025-11-04_rock.jpg]]End of October was the wedding of Thai and Tram in Hanoi. Right thereafter a group wanted to do a tour of the Hà Giang loop. So I planned to go to Hanoi by bike and have my own motorbike available in the mountains. Events leading up to this journey made it all a little more time constrained.
 ## 09-25 Leave Vietnam for a Visa?
 In early September it was finally decided that my course as "Culture of Vietnam and the Vietnamese Language" was accepted at the University of Education HCM. A welcoming ceremony was held on September 21st. In order to get my 1 year visa I have to leave Vietnam and receive it abroad. I would leave on September 25th, but the procedure needs 6 working days, and I would have to stay outside the country to wait for the invitation letter. Since a trip to Can Tho (Half marathon on September 14th) was planned for October 3rd to 6th, I postponed the trip to Cambodia.
 ## 10-07 Cambodia until October 20th
