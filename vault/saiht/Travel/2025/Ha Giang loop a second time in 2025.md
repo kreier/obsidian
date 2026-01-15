@@ -19,6 +19,9 @@ Trip to the flag pole. 54 square meteres (6x9 meters) represents the 54 local mi
 The afternoon we travel to the historic market in Đồng Văn. It has some great photo spots again.
 ## 11-04 Cốc Pảng and Du Gia Panorama Ecolodge 114.9 km
 On the way to Cốc Pảng Minh and I hike to a little overhanging rock next to the road for nice pictures, that other tourists took as well.
+
+![[2025-11-04_rock.jpg]]
+
 The afternoon is for pictures in the gorge of Cốc Pảng. Ngoc and Cuong get some impressive wedding pictures taken.
 
 The story of their photographer is not less impressive. One includes a bicycle journey to China for a week and the return with a black inflatable boat over the river. Of course picked up at the factory in China itself, giving a tour of the facilities. Connected prior to this journey with Aliexpress.
