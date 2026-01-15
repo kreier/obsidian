@@ -19,6 +19,9 @@ Trip to the flag pole. 54 square meteres (6x9 meters) represents the 54 local mi
 The afternoon we travel to the historic market in Đồng Văn. It has some great photo spots again.
 ## 11-04 Cốc Pảng and Du Gia Panorama Ecolodge 114.9 km
 On the way to Cốc Pảng Minh and I hike to a little overhanging rock next to the road for nice pictures, that other tourists took as well.
+
+![[2025-11-04_rock.jpg]]
+
 The afternoon is for pictures in the gorge of Cốc Pảng. Ngoc and Cuong get some impressive wedding pictures taken.
 
 The story of their photographer is not less impressive. One includes a bicycle journey to China for a week and the return with a black inflatable boat over the river. Of course picked up at the factory in China itself, giving a tour of the facilities. Connected prior to this journey with Aliexpress.
@@ -56,4 +59,5 @@ In a Google sheet I noted the distance traveled with my bike each day since leav
 | 11-05 | Vinh                              |      614.8 | 13  |
 | 11-06 | Quảng Ngãi                        |      636.1 | 14  |
 | 11-07 | Ho Chi Minh                       |      822.4 | 15  |
+
 This was the first table integrated in my notes like that. Maybe I can find more for other journeys? Just for documentation, and later reference. The total journey was 5275.5 kilometers!
