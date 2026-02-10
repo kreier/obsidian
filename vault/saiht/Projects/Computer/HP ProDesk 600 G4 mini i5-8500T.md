@@ -19,6 +19,8 @@ The link above does not work anymore in early 2026. Seller is **Nhật Phát**, 
 It only needs 4.9 Watt with powertop –auto-tune and Ubuntu.
 
 Little did I know that even though the memory bandwidth is not the best with scoring RAM prices at the end of 2025 this 32 GB machine could slowly, but steady actually run some agentic LLMs.
+## 2025-02-05
+I give it to Moises on February 5th, 2025. It's mainly used for Youtube to drive the 55" 4K monitor Ad-free with the Brave browser. But after TET 2026 I think I need it back.
 ## 2026-02-09
 Well, I gave it to Moises on February 5th, 2025. It's mainly used for Youtube to drive the 55" 4K monitor Ad-free with the Brave browser. But after TET 2026 I think I need it back.
 
