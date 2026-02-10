@@ -10,3 +10,6 @@ Even more surprising, it's only 350,000 VND per 32 GB DIMM, the total 128 GB cos
 I got all the materials form https://vitinhgiaphat.com/ and started assembling. Initially I wanted to unlock more power, frequency etc of the CPU. But in many cases I just ran into the thermal limitation and the 145W power limit.
 ## 2025-01-16 Water cooling
 This idea was lingering for a year now, and I finally placed the order for my first water cooling block. By now the AIOs are reliable and affordable, so I ordered one [VSP VCR-240](https://vsp.vn/tan-nhiet-nuoc-vsp-infinity-liquid-cooler-vcr-240-den.html) at Lazada for 630,000 VND or 24 USD.
+## 2025-01-27 Include in mining rig
+With so many cores, could it be of use for mining? The good days are long over, but for CPU there is at least Monero left. So I gave it a try:
+![[2025-01-27_mining.png]]No, 1200 kH is not a lot. A few years ago 18 cores sound a lot, but in 2025 some i3 get close to that core count. 
