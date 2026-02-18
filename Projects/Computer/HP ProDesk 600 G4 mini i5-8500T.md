@@ -1,14 +1,16 @@
 ---
 date: 2024-01-11
 ---
-The perfect little machine for a Home lab with some services like nginx, ollama, n8n, openclaw, open WebUI, pihole, home assistant and other toys. Got it on January 11th, 2024.
+The perfect little machine for a Home lab with some services like nginx, ollama, n8n, openclaw, open WebUI, pihole, home assistant and other toys. Got it on January 11th, 2024. It was first intended to replace my old [[HP Z600 Workstation]] from 2018. 6 years is a good time.
+## Setup
+
 ## 2024-01-11 
 
 4,500,000 VND for i5-8500T 6 core with 32GB DDR4 RAM and 512 GB NVMe 2024-01-11
 
 Offer: [https://www.chotot.com/mua-ban-may-tinh-de-ban-quan-tan-phu-tp-ho-chi-minh/111457593.htm](https://www.chotot.com/mua-ban-may-tinh-de-ban-quan-tan-phu-tp-ho-chi-minh/111457593.htm) , 
 
-The link above does not work anymore in early 2026. Seller is **Nhật Phát**, https://www.chotot.com/user/271df4190b60b88181d38fadb590f488 , Địa chỉ giao dịch: 49/10 Phạm Văn Bạch, P15, Tân bình, HCM. (Phường Tân Sơn, TP Hồ Chí Minh mới). He still sells this machine two years later, but now for 4,600,000 VND. Shouldn't used computers get cheaper?
+The link above does not work anymore in early 2026. Seller is **Shop May tinh vs linh kien** on chotot: https://www.chotot.com/user/9f53fed7874430855105c997bb05256f Seller is **Nhật Phát**, https://www.chotot.com/user/271df4190b60b88181d38fadb590f488 , Địa chỉ giao dịch: 49/10 Phạm Văn Bạch, P15, Tân bình, HCM. (Phường Tân Sơn, TP Hồ Chí Minh mới). He still sells this machine two years later, but now for 4,600,000 VND. Shouldn't used computers get cheaper?
 
 - 3,400,000 VND for i5 8500T 8GB DDR4 RAM and 256GB NVMe
 - 16 GB +300,000 VND 8gb ddr4
