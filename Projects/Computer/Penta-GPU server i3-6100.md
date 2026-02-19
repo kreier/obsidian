@@ -1,12 +1,16 @@
 ---
 date: 2025-01-03
 ---
-The goal for this server was to have a dedicated GPU machine with fast VRAM to increase the inference speed. See [[#History]] below. The planned P100 is not that much faster with HBM2 than my 3070 Ti. The multi GPU solution is more flexible and has ultimately more VRAM.
+The goal for this server was to have a dedicated GPU machine with fast VRAM to increase the inference speed. See the [[#History]] below. The planned P100 with HBM2 is not that much faster than my 3070 Ti. The multi GPU solution is more flexible and has ultimately more VRAM. Here is how it looks inside:
+![[2026-02-19_inside.jpg]]
+The graphic cards from left to right: P104-100, P106-100, GTX 1070 and P104-100. The LEDs on the mainboard indicate 3x green = PCIe Gen1 and 1x red = Gen3 for the 1070. CPU temperature currently at 34 degrees. For the boot process this display shows all kinds of other messages, states or errors.
 ## Mainboard EVGA Z170 4-way classified - broken
-I had seen the mainboard with 4 GPU slots a while ago for 600k, then reoffered at Chotot for 450k because one DIMM and one PCIe are broken. But everything else works, and a newer Z370 Gaming mainboard is 1,800k, significantly more expensive. This is just a hobby.
+I had seen the mainboard with 4 GPU slots a while ago for 600k, then reoffered at Chotot for 450k because one DIMM and one PCIe are broken. But everything else works, and a newer Z370 Gaming mainboard is 1,800k - significantly more expensive. This is just a hobby.
 ## CPU i3-6100
-Initially I had planned to use a i5-6600 4C/4T 3.9 GHz but the seller of the Z170 mainboard offered a i3-6100 CPU for 250k. The difference? 2C/4T 3.7 GHz, for my use case almost not noticeable, and another cost saving. One day I could upgrade to a 7700K when the prices go down (I lost that confidence early 2026)
+Initially I had planned to use a i5-6600 4C/4T 3.9 GHz but the seller of the Z170 mainboard offered a i3-6100 CPU for 250k. The difference? 2C/4T 3.7 GHz, for my use case almost not noticeable, and another cost saving. One day I could upgrade to a 7600K or 7700K when the prices go down (I lost that confidence early 2026).
 ## GPU cluster
+Combining 4 GPUs makes it possible to run larger models like the [nemotron-3-nano](https://ollama.com/library/nemotron-3-nano) with **30 billion** parameters on this machine. As a MoE model the token generation is still very usable with about 40 tokens/s.
+![[2026-02-19_nemotron.png]]
 ### GTX 1060 6GB broken
 Only 2 DP output work, the HDMI and one DP are broken. I have some DP-HDMI adapter lying around, so for 1600k a 6GB graphics card makes sense. The similar P104-100 is only 650k, but has no graphics whatsoever. I got one later.
 
@@ -99,6 +103,20 @@ I got this Crypto-GPU already in 2024/11/18 for 500k VND in my D7 neighborhood. 
 | PCIe   Bandwidth (        bidirectional)            (Gen1 x16)    1.65 GB/s |
 |-----------------------------------------------------------------------------|
 ```
+## Power consumption
+In idle the system needs 75 Watts. Using the internal GPU of the i3 instead of the 1070 reduced the power consumption by 10 Watt. With just 3 GPUs it was down to 60 W. That's why the HD 530 shows up as fifth GPU and hence the name "Penta-GPU" instead of "Quadro'GPU" server. For LLMs we actually only use 4 GPUs, but want to reduce the power consumption. The PCIe bus reduces speed down to Gen1 to save energy, and the GPUs reduce frequency for their processor and memory. They report themselves to use 23 Watt combined:
+
+![[2026-02-19_ollama_idle.png]]
+
+If I only run a smaller **4.3B** parameter model like [Gemma 3](https://ollama.com/library/gemma3) in Ollama, only one GPU will be tasked and use 100% of the 180 W power budget. The combined consumption is about 300 Watt at the wall. Response 48 token/s and prompt 466 token/s. My example question was "Explain the French revolution in about 1000 words." All 35 layers are offloaded to GPU0.
+
+![[2026-02-19_ollama_gemma3.png]]
+
+Larger models like nemotron-3-nano spread their **31.6B** parameter and 26GB GPU memory footprint each GPU gets a part of the processing, but only about 60 Watt each. Again all model layers (53) are offloaded to the GPU. Combined the system now needs up to 420 Watt from the wall:
+
+![[2026-02-19_ollama_nemotron2.png]]
+
+The response is 40 t/s and the prompt 120 t/s. Successive prompts are processed even faster with 435 and 438 t/s. For coding it easily produces a 200 lines python script to parse Markdown files in subfolders, remove YAML/TOML front matter, clean text, do word count, use Pandas, export as csv file. With 158 t/s for prompt and 40 t/s for response. Quite useful already! Now a coding agent with OpenClaw and a agentic coding model!
 ## History
 ### 2025-01-10 Original Plans with P40 and P100
 My planning was a possible multi-GPU machine with the [P100 GPU](https://www.techpowerup.com/gpu-specs/tesla-p100-pcie-16-gb.c2888) as main ingredient. With just 16 GB it has less VRAM than the similar [Tesla P40](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878) but has significant higher memory bandwidth because of HBM2 instead of GDDR5. And after the compute heavy prompt processing is done (not very long before the answer starts) it is memory bandwidth that limits the token generation. There is still some MATMUL going on, but even a CPU is sitting idle waiting for some data to multiply to arrive.
@@ -114,14 +132,14 @@ My planning was a possible multi-GPU machine with the [P100 GPU](https://www.tec
 | Max Power Consumption (TDP) |    250 W    |    250 W    |
 The P100 is 267mm long and need some extra space for the fan (120mm for a 120 fan) that therefore does not fit into a Prodesk. This needs a dedicated build.
 ### 2025-01-11 Case Xigmatek Cubi II (E-ATX)
-The big mainboard needs a big case. Intended for the larger P100 GPU it now also needed more space for the mainboard. Evaluating some options I landed at the Xigmatek and got it locally at tnc for 1,090k. https://www.tnc.com.vn/case-xigmatek-alpha-cubi-ii-black-en45271.html 
+The big mainboard needs a big case. Intended for the larger P100 GPU it now also needed more space for the GPU to fit a 12cm fan in front of the card. Evaluating some options I landed at the Xigmatek and got it locally at tnc for 1,090k. https://www.tnc.com.vn/case-xigmatek-alpha-cubi-ii-black-en45271.html Eventually I never got the P100, so there is some empty space in the case.
 ### 2025-01-27 Mining with three GPUs
-The intention for the 3 GPUs was to be used for LLMs, but as a benchmark test I also run some mining. Far from being profitable it is a good way to see the whole system maxed out:
+The intention for the initially 3 GPUs was to be used for LLMs, but as a benchmark test I also run some mining. Far from being profitable it is a good way to see the whole system maxed out:
 
 ![[2025-01-27_mining.png]]
 
 ### 2026-02-18 P100 in the cloud
-I noticed that I can use a P100 with my 7-year old Kaggle account from early 2019 for free! Here is the link, below the result: https://www.kaggle.com/code/kreier/opencl-benchmark
+I noticed that I can use a **P100 for free** with my 7-year old Kaggle account from early 2019! Here is the link, below the result: https://www.kaggle.com/code/kreier/opencl-benchmark
 
 ```
 .-----------------------------------------------------------------------------.
@@ -153,7 +171,9 @@ I noticed that I can use a P100 with my 7-year old Kaggle account from early 201
 | PCIe   Bandwidth (        bidirectional)            (Gen3 x16)    4.60 GB/s |
 '-----------------------------------------------------------------------------'
 ```
-Some of the PCIe ports have some limitations. If I use all 4 slots then some get reduced from 16 lanes to only 8. And the P104-100 has only 4 of the 16 lanes connected, while running only Gen1. With 0.84 GB/s we see the maximum of 1 GB/s approaching.
+The HBM2 of the [P100](https://www.techpowerup.com/gpu-specs/tesla-p100-pcie-16-gb.c2888) is not that much faster than the GDDR6X of my 3070 Ti. Theoretically it should reach 732 GB/s (for 5699 USD in 2016) while the 3070 Ti has 608 GB/s. In real application its rather 594 GB/s vs. 575 GB/s. Not 20% faster but only 3% faster with an older CC 6.1 versus 8.9. See the benchmark here: https://kreier.github.io/benchmark/gpu/ 
+
+Some of my PCIe ports both on the Z170 mainboard as well as the special crypto cards have some limitations. If I use all 4 slots then some slots get reduced from 16 lanes to only 8. And the P104-100 has only 4 of the 16 lanes connected, while running only Gen1. With 0.84 GB/s we see the maximum of 1 GB/s approaching.
 
 | Generation | x1 (1 Lane) | x4 (4 Lanes) | x8 (8 Lanes) | x16 (16 Lanes) |
 |------------|------------:|-------------:|-------------:|---------------:|
@@ -161,4 +181,9 @@ Some of the PCIe ports have some limitations. If I use all 4 slots then some get
 | PCIe 2.0   |   0.50 GB/s |     2.0 GB/s |     4.0 GB/s |       8.0 GB/s |
 | PCIe 3.0   |  0.985 GB/s |    3.94 GB/s |    7.88 GB/s |     15.75 GB/s |
 | PCIe 4.0   |  1.969 GB/s |    7.88 GB/s |   15.75 GB/s |     31.51 GB/s |
-Meanwhile the slower P106-100 has all 16 lanes at Gen1 speed. An updated test on 2026-02-19 delivered up to **3.33 GB/s** - 4x the speed of the P104-100. The GTX 1070 reports x16 bus is slowed down to Gen3 x8 on the Z170 Classified mainboard. Theoretical 7.88 GB/s we indeed measured **5.69 GB/s** for this card.
+Meanwhile the slower P106-100 has all 16 lanes at Gen1 speed. An updated test on 2026-02-19 delivered up to **3.33 GB/s** - 4x the speed of the P104-100. The GTX 1070 reports x16 bus is slowed down to Gen3 x8 on the Z170 Classified mainboard. With a theoretical 7.88 GB/s we indeed measured **5.69 GB/s** for this card.
+### 2026-02-19 Finally four GPUs for LLMs
+After getting another power splitter to supply four GPUs and carefully adding them to the system it finally worked: Four GPUs with 30 GB VRAM worked in unison. Now let's get it some coding work to do!
+#### Auto powering down
+Ollama frees the GPU memory after not being used for 5 minutes (standard setting). I want to use this determine if the machine can go to suspension. I wanted to use sleep, but the Wake On Lan WOL of the Z170 board is implemented in a non-working way to target a maximum overclocking features. But S3 works, and a Raspberry Nano 2040 W works as virtual keyboard to wake up the server over the network.
+
