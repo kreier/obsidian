@@ -112,11 +112,11 @@ If I only run a smaller **4.3B** parameter model like [Gemma 3](https://ollama.c
 
 ![[2026-02-19_ollama_gemma3.png]]
 
-Larger models like nemotron-3-nano spread their **31.6B** parameter and 26GB GPU memory footprint each GPU gets a part of the processing, but only about 60 Watt each. Again all model layers (53) are offloaded to the GPU. Combined the system now needs up to 420 Watt from the wall:
+Larger models like [nemotron-3-nano](https://ollama.com/library/nemotron-3-nano) spread their **31.6B** parameter and **26GB GPU** memory footprint each GPU gets a part of the processing, but only about 60 Watt each. Again all model layers (53) are offloaded to the GPU. Combined the system now needs up to **420 Watt** from the wall:
 
 ![[2026-02-19_ollama_nemotron2.png]]
 
-The response is 40 t/s and the prompt 120 t/s. Successive prompts are processed even faster with 435 and 438 t/s. For coding it easily produces a 200 lines python script to parse Markdown files in subfolders, remove YAML/TOML front matter, clean text, do word count, use Pandas, export as csv file. With 158 t/s for prompt and 40 t/s for response. Quite useful already! Now a coding agent with OpenClaw and a agentic coding model!
+The response is **40 t/s** and the prompt 120 t/s. Successive prompts are processed even faster with 435 and 438 t/s. For coding it easily produces a 200 lines python script to parse Markdown files in subfolders, remove YAML/TOML front matter, clean text, do word count, use Pandas, export as csv file. With 158 t/s for prompt and 40 t/s for response. Quite useful already! Now a coding agent with OpenClaw and a agentic coding model!
 ## History
 ### 2025-01-10 Original Plans with P40 and P100
 My planning was a possible multi-GPU machine with the [P100 GPU](https://www.techpowerup.com/gpu-specs/tesla-p100-pcie-16-gb.c2888) as main ingredient. With just 16 GB it has less VRAM than the similar [Tesla P40](https://www.techpowerup.com/gpu-specs/tesla-p40.c2878) but has significant higher memory bandwidth because of HBM2 instead of GDDR5. And after the compute heavy prompt processing is done (not very long before the answer starts) it is memory bandwidth that limits the token generation. There is still some MATMUL going on, but even a CPU is sitting idle waiting for some data to multiply to arrive.
@@ -186,4 +186,18 @@ Meanwhile the slower P106-100 has all 16 lanes at Gen1 speed. An updated test on
 After getting another power splitter to supply four GPUs and carefully adding them to the system it finally worked: Four GPUs with 30 GB VRAM worked in unison. Now let's get it some coding work to do!
 #### Auto powering down
 Ollama frees the GPU memory after not being used for 5 minutes (standard setting). I want to use this determine if the machine can go to suspension. I wanted to use sleep, but the Wake On Lan WOL of the Z170 board is implemented in a non-working way to target a maximum overclocking features. But S3 works, and a Raspberry Nano 2040 W works as virtual keyboard to wake up the server over the network.
+#### Inference speed on newer MoE models
+In January 2025 I tried [Qwen2.5:32b](https://ollama.com/library/qwen2.5) with 32.76B parameters and its 65 layers of 20 GB to fit into my 26 GB VRAM (8/6/6/6) machine. With 32 GB DDR4 I could run about **0.92 t/s** from the CPU, limited by the memory bandwidth of about 32 GB/s. But I **could not** get the layers split and load into VRAM successfully. See [ollama_multi_GPU.csv](https://github.com/kreier/benchmark/blob/main/llm/ollama_multi_GPU.csv). With **3 GPUs** (8/6/6) and 20 GB VRAM I could offload 80% to the GPU and got 21/14/15 layers there. The speed increased to 2.34 token/s. With a fourth GPU (8/6/6/6) I could get 98% of layers to the GPU: 19/15/15/15 and increased the inference to 5.11 token/s. **Why not 100%?** Just one more layer, you got already 21 into the 8GB GPU earlier! Well, I even commented on ollama Github about similar problems ([#7509 of ollama](https://github.com/ollama/ollama/issues/7509#issuecomment-2585521606) and I think in the time since then it has been fixed.) With the parameter `num_gpu=65` I got all layers offloaded, but also had an unstable system and **6.37 t/s**. Retest in 2026 with 30 GB of VRAM (8/8/8/6) and the layers are easily offloaded 18/18/18/11 and the inference is up to **8.42 token/s**. About 10x as fast as the CPU, with memory up to 320 GB/s on GDDR5X.
 
+A comparable model in size in 2026 is now available with [nemotron-3-nano](https://ollama.com/library/nemotron-3-nano) with 31.6B parameters, 53 layers and 24 GB model size. The context window is no longer just 32K but 1M! Now more MoE models are available, and the general speed has further increased for the same hardware, while the quality of the models also improved. Even though the memory footprint is 4GB larger the model is significantly faster! I get 38 t/s instead of just 8, almost 5x the speed because of MoE. And the answer is also much more sophisticated. Here a few more details of the comparison:
+
+|                                 model                              | size | parameter | context | token/s | prompt | GPUs | layer |
+|--------------------------------------------------------------------|-----:|:---------:|--------:|:-------:|:------:|:----:|:-----:|
+| [qwen2.5:32b](https://ollama.com/library/qwen2.5)                  | 20GB |   32.8B   |     32K |       8 |     75 |    4 |    65 |
+| [qwen3:32b](https://ollama.com/library/qwen3)                      | 20GB |   32.8B   |     40K |       8 |     52 |    3 |    65 |
+| [gemma3:27b](https://ollama.com/library/gemma3)                    | 17GB |   27.4B   |    128K |       9 |     50 |    3 |    63 |
+| [glm-4.7-flash:q4_K_M](https://ollama.com/library/glm-4.7-flash)   | 19GB |   29.9B   |    198K |      25 |     81 |    3 |    48 |
+| [nemotron-3-nano:30b](https://ollama.com/library/nemotron-3-nano)  | 24GB |   31.6B   |   1000K |      38 |    116 |    4 |    53 |
+| [gpt-oss:20b](https://ollama.com/library/gpt-oss)                  | 14GB |   20.9B   |    128K |      42 |    238 |    2 |    25 |
+| [gemma3:4b](https://ollama.com/library/gemma3)                     |  4GB |    4.3B   |    128K |      45 |    322 |    1 |    35 |
+Surprisingly the largest model in this 30B class is also the fastest: nemotron-3-nano. With its MoE architecture it rivals much smaller 20B and 4B models! All that on 10 year old hardware.
