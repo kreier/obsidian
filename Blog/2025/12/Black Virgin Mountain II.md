@@ -12,3 +12,6 @@ The temple and tourist area on top of the mountain has been expanded by the Sun 
 <img src="Diary/files/2025-12-12_Nui_Ba_Den_3.jpg" width="65%"> <img src="Diary/files/2025-12-12_Nui_Ba_Den_4.jpg" width="32%">
 
 There is an old path up to the mountain with stairs all the way up to 350 meters. Even the guard rails next to the stairs have been painted in yellow recently. But some upper sections have been washed away, and only a boulder trail remains. At 400 meters height it is more and more overgrown, and increasing in difficulty. The heat map on Strava shows that very few continue this path. It might be an option for another day. Above 750 meters the trail from the top becomes more visible again on Strava. But what about the section in between? Last time been here: [[2021#December 2021]]. And next time will be a successful ascent and descent: [[2026#January 2026]]
+
+## Data from Apple watch
+Time 14:49 - 17:32, 2:26:18, distance 7.71 km, elevation gain 454m

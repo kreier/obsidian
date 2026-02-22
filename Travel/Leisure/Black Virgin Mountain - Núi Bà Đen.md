@@ -12,3 +12,6 @@ Of course we are interested in hiking up the mountain. Here is my personal histo
 - [[Black Virgin Mountain II]]  - 2025/12/12
 - [[Black Virgin Mountain III]] - 2026/01/04
 - [[Black Virgin Mountain IV]] - 2026/02/16
+
+## References
+- [[Hiking in Vietnam]] 
