@@ -1,4 +1,7 @@
 This list is manually, the folder might be more up to date. More than 170 are found on GitHub, so I made a separate list [[Overview of GitHub Projects]].
+## 2026
+- [[Penta-GPU server i3-6100]]
+- 
 ## 2025
 - [[Obsidian]]
 - Blog
