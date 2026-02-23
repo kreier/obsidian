@@ -185,7 +185,12 @@ Meanwhile the slower P106-100 has all 16 lanes at Gen1 speed. An updated test on
 ### 2026-02-19 Finally four GPUs for LLMs
 After getting another power splitter to supply four GPUs and carefully adding them to the system it finally worked: Four GPUs with 30 GB VRAM worked in unison. Now let's get it some coding work to do!
 #### Auto powering down
-Ollama frees the GPU memory after not being used for 5 minutes (standard setting). I want to use this determine if the machine can go to suspension. I wanted to use sleep, but the Wake On Lan WOL of the Z170 board is implemented in a non-working way to target a maximum overclocking features. But S3 works, and a Raspberry Nano 2040 W works as virtual keyboard to wake up the server over the network.
+Ollama frees the GPU memory after not being used for 5 minutes (standard setting). I want to use this determine if the machine can go to suspension. I wanted to use sleep, but the Wake On Lan WOL of the Z170 board is implemented in a non-working way to target a maximum overclocking features. But S3 works, and a Raspberry Pico W rp2040 works as virtual keyboard to wake up the server over the network.
+##### New project for powering down
+It turns out, the Raspberry Pico W consumes too much power for Wifi. So when the penta goes to S3 suspension, there is not enough power for the Pico W to continue operating. We need less power! Maybe light sleep and BLE?
+
+That's the very idea of a new project with an esp32c3 Supermini, called [https://github.com/kreier/wob](https://github.com/kreier/wob) for WOB - Wake On Bluetooth. It will take some time to make it run.
+
 #### Inference speed on newer MoE models
 In January 2025 I tried [Qwen2.5:32b](https://ollama.com/library/qwen2.5) with 32.76B parameters and its 65 layers of 20 GB to fit into my 26 GB VRAM (8/6/6/6) machine. With 32 GB DDR4 I could run about **0.92 t/s** from the CPU, limited by the memory bandwidth of about 32 GB/s. But I **could not** get the layers split and load into VRAM successfully. See [ollama_multi_GPU.csv](https://github.com/kreier/benchmark/blob/main/llm/ollama_multi_GPU.csv). With **3 GPUs** (8/6/6) and 20 GB VRAM I could offload 80% to the GPU and got 21/14/15 layers there. The speed increased to 2.34 token/s. With a fourth GPU (8/6/6/6) I could get 98% of layers to the GPU: 19/15/15/15 and increased the inference to 5.11 token/s. **Why not 100%?** Just one more layer, you got already 21 into the 8GB GPU earlier! Well, I even commented on ollama Github about similar problems ([#7509 of ollama](https://github.com/ollama/ollama/issues/7509#issuecomment-2585521606) and I think in the time since then it has been fixed.) With the parameter `num_gpu=65` I got all layers offloaded, but also had an unstable system and **6.37 t/s**. Retest in 2026 with 30 GB of VRAM (8/8/8/6) and the layers are easily offloaded 18/18/18/11 and the inference is up to **8.42 token/s**. About 10x as fast as the CPU, with memory up to 320 GB/s on GDDR5X.
 
@@ -200,4 +205,34 @@ A comparable model in size in 2026 is now available with [nemotron-3-nano](https
 | [nemotron-3-nano:30b](https://ollama.com/library/nemotron-3-nano)  | 24GB |   31.6B   |   1000K |      38 |    116 |    4 |    53 |
 | [gpt-oss:20b](https://ollama.com/library/gpt-oss)                  | 14GB |   20.9B   |    128K |      42 |    238 |    2 |    25 |
 | [gemma3:4b](https://ollama.com/library/gemma3)                     |  4GB |    4.3B   |    128K |      45 |    322 |    1 |    35 |
+
 Surprisingly the largest model in this 30B class is also the fastest: nemotron-3-nano. With its MoE architecture it rivals much smaller 20B and 4B models! All that on 10 year old hardware.
+### Comparison of Nemotron speed
+On February 7th, 2026, Alex Ziskind [published a video](https://youtu.be/QbtScohcdwI?si=9BN22xzaDyVyXLVO&t=845) of the NVIDIA DGX Spark for $4000 and it's speed comparison to three similar products. In a later part he tested the very [Nemotron-3-Nano-30B](https://huggingface.co/unsloth/Nemotron-3-Nano-30B-A3B-GGUF) model (at 14:05) that I used, but in a non-quantized version (BF16 with 63.2 GB vs. Q4_K_M 24.6GB, 2.57x smaller).
+
+- llama-bench pp4096 1068 t/s 14:48 (got 116 t/s, sometimes 450 t/s)
+- llama-bench tg8196 throughput 61 token/s 12:49 (vs 38 t/s just 60% faster)
+- power 63 Watt, 200 Watt from the wall 15:26 (versus 420 Watt, 6.7x or 450W wall, 2.25x)
+
+My prompt processing is 2-10x slower. But that's just the initial start of generating the answer, usually just a few seconds. The very answer later is sometimes generated into minutes. And here there is not much of a difference: 61 /s vs. 38 t/s. Saved a few thousand dollars!
+
+Let's test the smaller model [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B):
+
+- llama-bench pp4096 throughput 1970 t/s (12:37)
+- llama-bench tg 8192 throughput 61.8 t/s (12:49)
+- Power: 65 Watt GPU, 150 Watt from the wall (12:19)
+
+The Q4_K_M is only 2.5GB and ran just on my P104-100:
+
+- llama-bench pp4096 throughput ..... t/s 
+- llama-bench tg 8192 throughput ..... t/s 
+- Power: 65 Watt GPU, 150 Watt from the wall 
+
+All on a freshly compiled llama.cpp b8134 with `nvidia-smi` 535 and `nvcc` 12.9. Start is simple:
+
+```shell
+rm -rf build
+cmake -B build -DGGML_CUDA=ON -DLLAMA_OPENSSL=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_ARCHITECTURES=OFF -DCMAKE_CUDA_FLAGS="--generate-code=arch=compute_61,code=sm_61 -Wno-deprecated-gpu-targets"
+cmake --build build --config Release
+./build/bin/llama-cli -hf Qwen/Qwen3-4B-GGUF:Q4_K_M -p "Explain quantum entanglement" --n-gpu-layers 99
+```
