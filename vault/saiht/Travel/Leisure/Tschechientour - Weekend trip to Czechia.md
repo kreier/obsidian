@@ -1,0 +1,1 @@
+For over a decade this was a constant part of my life: At least once a year take a trip with a group of young people on the weekend to Chechia. The dedicated website: https://tschechien.saiht.de/ 
