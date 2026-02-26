@@ -15,6 +15,7 @@ The cluster currently has these 4 Pascal CC 6.1 GPUs:
 - 2x P104-100 with 320 GB/s bandwidth [[#P104-100]] for 650k + 400k
 - GTX 1070 256 GB/s [[#GTX 1070 8GB]] for 2K VND
 - P106-100 with 192 GB/s [[#P106-100]] for 500k
+
 Total cost: 3,550,000 VND or **136 USD** or 115 Eur. Much cheaper than a DGX Spark for 4000 USD.
 ### GTX 1070 8GB
 After having a broken 1060 with 6GB and P106-100 with 6GB I was looking for more VRAM and visited some Chotot sellers for a 2080 Ti or 1080 Ti, only to find out that they had been sold. 11 GB sounded great! But I found a seller of the 1070 for only 2M VND, so I got one. At least I would be sure that the drivers would work, and I could use it for Gaming - just in case. Strangely, my much newer 3070 Ti also has only 8 GB of VRAM. Here is one benchmark result:
@@ -47,7 +48,7 @@ After having a broken 1060 with 6GB and P106-100 with 6GB I was looking for more
 |-----------------------------------------------------------------------------|
 ```
 ### P104-100
-Got another one on 2026-02-14 and [tested it's speed](https://github.com/kreier/benchmark/blob/main/gpu/opencl/P104-100.txt) - with GRRD5X even faster than the 1070.
+Got another one on 2026-02-14 and [tested it's speed](https://github.com/kreier/benchmark/blob/main/gpu/opencl/P104-100.txt) - with GDDR5X even faster than the 1070.
 
 ```
 |----------------.------------------------------------------------------------|
@@ -108,7 +109,7 @@ I got this Crypto-GPU already in 2024/11/18 for 500k VND in my D7 neighborhood. 
 |-----------------------------------------------------------------------------|
 ```
 ### GTX 1060 6GB broken
-Only 2 DP output work, the HDMI and one DP are broken. I have some DP-HDMI adapter lying around, so for 1600k a 6GB graphics card makes sense. The similar P104-100 is only 650k, but has no graphics whatsoever. I got one later. This GPU was then exported to the Xeon E3-1226 v3 server.
+Only 2 DP output work, the HDMI and one DP are broken. I have some DP-HDMI adapter lying around, so for 1600k a 6GB graphics card makes sense. The similar P104-100 is only 650k, but has no graphics whatsoever. I got one later. This GPU was then exported to the [[E3-1226 v3 with GTX 1060]] server.
 
 ## D) Power consumption
 ### Idle - 75 Watt
@@ -141,9 +142,9 @@ My planning was a possible multi-GPU machine with the [P100 GPU](https://www.tec
 |      Memory Bus Width       |   384-bit   |  4096-bit   |
 | Max Power Consumption (TDP) |    250 W    |    250 W    |
 
-The P100 is 267mm long and need some extra space for the fan (120mm for a 120 fan) that therefore does not fit into a HP ProDesk. This needs a dedicated build. As I will find out more than a year later [[#2026-02-18 P100 in the cloud]] the speed improvement would be not that significant. My then [MoE](https://en.wikipedia.org/wiki/Mixture_of_experts) models would have sped up inference, so that again memory size would be a limit for useful LLM models. 
+The P100 is 267mm long and need some extra space for the fan (120mm for a 120 fan) that therefore does not fit into a HP ProDesk. This needs a dedicated build. As I will find out more than a year later [[#2026-02-18 P100 in the cloud]] the speed improvement would be not that significant. By then [MoE](https://en.wikipedia.org/wiki/Mixture_of_experts) models had sped up inference by almost one magnitude, so that again memory size would be a more limiting factor for useful local LLM models than just memory bandwidth. 
 ### 2025-01-11 Case Xigmatek Cubi II (E-ATX)
-The big mainboard needs a big case. Intended for the larger P100 GPU it now also needed more space for the GPU to fit a 12cm fan in front of the card. Evaluating some options I landed at the Xigmatek and got it locally at tnc for 1,090k. https://www.tnc.com.vn/case-xigmatek-alpha-cubi-ii-black-en45271.html Eventually I never got the P100, so there is some empty space in the case.
+The new big E-ATX mainboard needs a bigger case. And the case is intended for the larger P100. This GPU needs more space to fit a 12cm fan in front of the card. Evaluating some options I landed at the Xigmatek Cubi II and got it locally at tnc for 1,090k. https://www.tnc.com.vn/case-xigmatek-alpha-cubi-ii-black-en45271.html Eventually I never got the P100, so there is some empty space in the case next to the GPUs. At least for now.
 ### 2025-01-27 Mining with three GPUs
 The intention for the initially 3 GPUs was to be used for LLMs, but as a benchmark test I also run some mining. Far from being profitable it is a good way to see the whole system maxed out:
 
@@ -195,7 +196,7 @@ Some of my PCIe ports both on the Z170 mainboard as well as the special crypto c
 
 Meanwhile the slower P106-100 has all 16 lanes at Gen1 speed. An updated test on 2026-02-19 delivered up to **3.33 GB/s** - 4x the speed of the P104-100. The GTX 1070 reports x16 bus is slowed down to Gen3 x8 on the Z170 Classified mainboard. With a theoretical 7.88 GB/s we indeed measured **5.69 GB/s** for this card.
 ### 2026-02-19 Finally four GPUs for LLMs
-After getting another power splitter to supply four GPUs and carefully adding them to the system it finally worked: Four GPUs with 30 GB VRAM worked in unison. Now let's get it some coding work to do!
+After getting another power splitter to supply four GPUs and carefully adding them to the system it finally worked: **Four GPUs** with **30 GB VRAM** worked in unison. Now let's get it some coding work to do!
 #### Auto powering down
 Ollama frees the GPU memory after not being used for 5 minutes (standard setting). I want to use this determine if the machine can go to suspension. I wanted to use sleep, but the Wake On Lan WOL of the Z170 board is implemented in a non-working way to target a maximum overclocking features. But S3 works, and a Raspberry Pico W rp2040 works as virtual keyboard to wake up the server over the network.
 ##### New project for powering down
@@ -203,9 +204,12 @@ It turns out, the Raspberry Pico W consumes too much power for Wifi. So when the
 
 That's the very idea of a new project with an esp32c3 Supermini, called [https://github.com/kreier/wob](https://github.com/kreier/wob) for WOB - Wake On Bluetooth. It will take some time to make it run.
 
-#### Inference speed on newer MoE models
-In January 2025 I tried [Qwen2.5:32b](https://ollama.com/library/qwen2.5) with 32.76B parameters and its 65 layers of 20 GB to fit into my 26 GB VRAM (8/6/6/6) machine. With 32 GB DDR4 I could run about **0.92 t/s** from the CPU, limited by the memory bandwidth of about 32 GB/s. But I **could not** get the layers split and load into VRAM successfully. See [ollama_multi_GPU.csv](https://github.com/kreier/benchmark/blob/main/llm/ollama_multi_GPU.csv). With **3 GPUs** (8/6/6) and 20 GB VRAM I could offload 80% to the GPU and got 21/14/15 layers there. The speed increased to 2.34 token/s. With a fourth GPU (8/6/6/6) I could get 98% of layers to the GPU: 19/15/15/15 and increased the inference to 5.11 token/s. **Why not 100%?** Just one more layer, you got already 21 into the 8GB GPU earlier! Well, I even commented on ollama Github about similar problems ([#7509 of ollama](https://github.com/ollama/ollama/issues/7509#issuecomment-2585521606) and I think in the time since then it has been fixed.) With the parameter `num_gpu=65` I got all layers offloaded, but also had an unstable system and **6.37 t/s**. Retest in 2026 with 30 GB of VRAM (8/8/8/6) and the layers are easily offloaded 18/18/18/11 and the inference is up to **8.42 token/s**. About 10x as fast as the CPU, with memory up to 320 GB/s on GDDR5X.
-
+#### Inference speed on large 30B models
+##### January 2025 - 0.92 to 6.37 t/s
+In January 2025 I tried [Qwen2.5:32b](https://ollama.com/library/qwen2.5) with 32.76B parameters and its 65 layers of 20 GB to fit into my 26 GB VRAM (8/6/6/6) machine. With 32 GB DDR4 I could run about **0.92 t/s** from the CPU, limited by the memory bandwidth of about 32 GB/s. But I **could not** get the layers split and load into VRAM successfully. See [ollama_multi_GPU.csv](https://github.com/kreier/benchmark/blob/main/llm/ollama_multi_GPU.csv). With **3 GPUs** (8/6/6) and 20 GB VRAM I could offload 80% to the GPU and got 21/14/15 layers there. The speed increased to 2.34 token/s. With a fourth GPU (8/6/6/6) I could get 98% of layers to the GPU: 19/15/15/15 and increased the inference to 5.11 token/s. **Why not 100%?** Just one more layer, you got already 21 into the 8GB GPU earlier! Well, I even commented on ollama Github about similar problems ([#7509 of ollama](https://github.com/ollama/ollama/issues/7509#issuecomment-2585521606) and I think in the time since then it has been fixed.) With the parameter `num_gpu=65` I got all layers offloaded, but also had an unstable system and **6.37 t/s**. 
+##### January 2026 - 8.42 t/s
+Retest in 2026 with 30 GB of VRAM (8/8/8/6) and the layers are easily offloaded 18/18/18/11 and the inference is up to **8.42 token/s**. About 10x as fast as the CPU, with memory up to 320 GB/s on GDDR5X.
+##### Newer MoE models - 38 t/s
 A comparable model in size in 2026 is now available with [nemotron-3-nano](https://ollama.com/library/nemotron-3-nano) with 31.6B parameters, 53 layers and 24 GB model size. The context window is no longer just 32K but 1M! Now more MoE models are available, and the general speed has further increased for the same hardware, while the quality of the models also improved. Even though the memory footprint is 4GB larger the model is significantly faster! I get 38 t/s instead of just 8, almost 5x the speed because of MoE. And the answer is also much more sophisticated. Here a few more details of the comparison:
 
 | model                                                             | size | parameter | context | token/s | prompt  | GPUs | layers |
@@ -218,7 +222,7 @@ A comparable model in size in 2026 is now available with [nemotron-3-nano](https
 | [gpt-oss:20b](https://ollama.com/library/gpt-oss)                 | 14GB |   20.9B   |    128K |   42    |   238   |  2   |   25   |
 | [gemma3:4b](https://ollama.com/library/gemma3)                    |  4GB |   4.3B    |    128K |   45    |   322   |  1   |   35   |
 
-Surprisingly the largest model in this 30B class is also the fastest: nemotron-3-nano. With its MoE architecture it rivals much smaller 20B and 4B models! All that on 10 year old hardware.
+Surprisingly the largest model in this 30B class is also the fastest: nemotron-3-nano. With its **MoE architecture** it rivals much smaller 20B and 4B models! All that on 10 year old hardware.
 ### Comparison of Nemotron-3 speed
 On February 7th, 2026, Alex Ziskind [published a video](https://youtu.be/QbtScohcdwI?si=9BN22xzaDyVyXLVO&t=845) of the **NVIDIA DGX Spark** for $4000 and it's speed comparison to three similar products. In a later part he tested the very [Nemotron-3-Nano-30B](https://huggingface.co/unsloth/Nemotron-3-Nano-30B-A3B-GGUF) model (at 14:05) that I used, but in a non-quantized version (BF16 with 63.2 GB vs. Q4_K_M 24.6GB, 2.57x smaller).
 
@@ -226,19 +230,21 @@ On February 7th, 2026, Alex Ziskind [published a video](https://youtu.be/QbtScoh
 - llama-bench tg8196 throughput 61 token/s 12:49 (vs my 38 t/s just **60% faster**)
 - power 63 Watt, 200 Watt from the wall 15:26 (versus 420 Watt, 6.7x or 450W wall, 2.25x)
 
-My prompt processing is 2-10x slower. But that's just the initial start of generating the answer, usually just a few seconds. The very answer later is sometimes generated into mnvinutes. And here there is not much of a difference: 61 /s vs. 38 t/s. Saved a few thousand dollars! The DGX Spark would be only 60% faster but with $136 for my 4 GPUs **29x cheaper**!
+My prompt processing is 2-10x slower. But that's just the initial start of generating the answer, usually just a few seconds. The very answer later is sometimes generated in several minutes. And here there is not much of a difference: 61 t/s vs. 38 t/s. Saved a few thousand dollars! The DGX Spark would be only 60% faster but with $136 for my 4 GPUs are **29x cheaper**!
+
+#### Qwen3-4B
 
 Let's test the smaller model [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B):
 
 - llama-bench pp4096 throughput 1970 t/s (12:37) is **3x faster**
-- llama-bench tg8192 throughput 61.8 t/s (12:49) is only
-- Power: 65 Watt GPU, 150 Watt from the wall (12:19)
+- llama-bench tg8192 throughput 61.8 t/s (12:49) is only **2.6x faster**
+- Power: 65 Watt GPU, 150 Watt from the wall (12:19) is in total **2x lower**
 
 The **Qwen3:4B Q4_K_M** is just 2.5GB and can run on **a single P104-100** GPU. It only took a little longer to compile for the Pascal architecture, see [[#GPU with CUDA Compiler 12.2]] below.
 
 - llama-bench pp4096 throughput 665 t/s 
-- llama-bench tg8192 throughput 50.6 t/s 
-- Power: 113 Watt GPU, 220 Watt from the wall 
+- llama-bench tg8192 throughput 23.5 t/s 
+- Power: 175 Watt GPU, 304 Watt from the wall 
 
 The instructions:
 ```Bash
@@ -286,8 +292,13 @@ CUDA_VISIBLE_DEVICES=0 ./build/bin/llama-bench -m ~/.cache/llama.cpp/Qwen_Qwen3-
 ```
 The result:
 
-
-### Not working with 12.9
+|        | pp4096 | tg8192 |  GPU  |  wall |
+|--------|:------:|:------:|:-----:|:-----:|
+| DGX    |   1970 |  61.8  |  65 W | 150 W |
+| GPU 4x |    698 | 21.54  | 240 W | 440 W |
+| GPU 1x |    664 | 23.47  | 175 W | 304 W |
+As mentioned above: **29x cheaper**, using 2x the power and 2.5 to **3x slower.** But with this token generation speed it is still usable.
+### Not working with CUDA Compiler 12.9
 I tried a freshly compiled llama.cpp `b8134` with `nvidia-smi` 535.288.01 and `nvcc` 12.9. I thought it would be simple:
 
 ```shell
