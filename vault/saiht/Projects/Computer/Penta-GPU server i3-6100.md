@@ -230,29 +230,38 @@ My prompt processing is 2-10x slower. But that's just the initial start of gener
 
 Let's test the smaller model [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B):
 
-- llama-bench pp4096 throughput 1970 t/s (12:37)
-- llama-bench tg8192 throughput 61.8 t/s (12:49)
+- llama-bench pp4096 throughput 1970 t/s (12:37) is **3x faster**
+- llama-bench tg8192 throughput 61.8 t/s (12:49) is only
 - Power: 65 Watt GPU, 150 Watt from the wall (12:19)
 
-The **Qwen3:4B Q4_K_M** is only 2.5GB and can run on a single P104-100 GPU:
+The **Qwen3:4B Q4_K_M** is just 2.5GB and can run on **a single P104-100** GPU. It only took a little longer to compile for the Pascal architecture, see [[#GPU with CUDA Compiler 12.2]] below.
 
-- llama-bench pp4096 throughput 841 t/s 
+- llama-bench pp4096 throughput 665 t/s 
 - llama-bench tg8192 throughput 50.6 t/s 
-- Power: 180 Watt GPU, 320 Watt from the wall 
+- Power: 113 Watt GPU, 220 Watt from the wall 
 
-Only to compile llama.cpp for Pascal took a little longer, see [[#GPU with CUDA Compiler 12.2]] below.
+The instructions:
+```Bash
+CUDA_VISIBLE_DEVICES=3 ./build/bin/llama-bench -m ~/.cache/llama.cpp/Qwen_Qwen3-4B-GGUF_Qwen3-4B-Q4_K_M.gguf -ngl 99 -p 4096 -n 8192
+```
 
 ## F) Build llama.cpp for Pascal
 This is not that easy. The latest stable Nvidia driver is from the 535 branch, currently 535.288.01. The CUDA compiler shipping with the 535 driver is 12.2, but this version does not support Ubuntu 24.04, only 20.04 and 22.04. Ubuntu 24.04 ships with gcc 13, but CUDA 12.2 only works with gcc 12. I was not able to get a working image with CUDA Compiler 12.9, the latest to support the Pascal architecture. Everything below CC 7.5 was dropped with version 13.
 
-I went for the older [CUDA Toolkit 12.2](https://developer.nvidia.com/cuda-12-2-0-download-archive) with the driver 535.288.01 (supporting my 4 Pascal GPUs) in the 22.04 variant. Here the installation:
+I went for the older [CUDA Toolkit 12.2](https://developer.nvidia.com/cuda-12-2-0-download-archive) with the driver 535.288.01 (supporting my 4 Pascal GPUs) in the 22.04 variant. In summary the prerequisites that worked:
+- Ubuntu 24.04
+- [[CUDA]] Toolkit 12.2 - you have to add the path variables by hand
+- Nvidia driver **535.288.01**
+- GCC and CPP **v12**, not 13
+
+Here the installation: 
 ```Bash
 wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/cuda_12.2.0_535.54.03_linux.run
 sudo sh cuda_12.2.0_535.54.03_linux.run
 git clone https://github.com/ggml-org/llama.cpp
 cd llama.cpp
 ```
-### Just CPU
+### Just the CPU
 ```Bash
 rm -rf build
 cmake -B build -DLLAMA_OPENSSL=ON -DBUILD_SHARED_LIBS=OFF
@@ -268,8 +277,15 @@ Result: pp512 with 18.6 t/s and tg128 with 6.5 t/s. Now let's try this with GPU:
 ```Bash
 cmake -B build -DLLAMA_OPENSSL=ON -DBUILD_SHARED_LIBS=OFF -DGGML_CUDA=ON
 cmake --build build --config Release
-./build/bin/llama-cli -hf Qwen/Qwen3-4B-GGUF:Q4_K_M -p "Explain quantum entanglement"
+./build/bin/llama-cli -hf Qwen/Qwen3-4B-GGUF:Q4_K_M -p "Explain quantum entanglement" --n-gpu-layers 99
 ```
+It worked! The work is distributed across all 4 GPUS. Now for benchmarking, with standard parameters I get pp512 813 t/s and tg128 40.3 t/s. Compared to CPU that's 44x and 6.2x. If I limit to one GPU with `UDA_VISIBLE_DEVICES=0 ./build/bin/llama-bench -m ~/.cache/llama.cpp/Qwen_Qwen3-4B-GGUF_Qwen3-4B-Q4_K_M.gguf -ngl 99` I get pp512 914 t/s and tg128 49 t/s. That's 49x and 7.6x. Now to the benchmark to compare with the DGX Spark:
+
+```Bash
+CUDA_VISIBLE_DEVICES=0 ./build/bin/llama-bench -m ~/.cache/llama.cpp/Qwen_Qwen3-4B-GGUF_Qwen3-4B-Q4_K_M.gguf -ngl 99 -p 4096 -n 8192
+```
+The result:
+
 
 ### Not working with 12.9
 I tried a freshly compiled llama.cpp `b8134` with `nvidia-smi` 535.288.01 and `nvcc` 12.9. I thought it would be simple:
