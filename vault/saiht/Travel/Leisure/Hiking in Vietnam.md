@@ -1,15 +1,17 @@
-While being a popular sport in western countries this outdoor activity is slowly taking off in Vietnam, too. Some popular destinations I tested myself:
+It is a popular sport in western countries. Vietnam is slowly catching up. More people start looking for an escape of the city on weekends. Some popular destinations I tested myself, ordered by distance from the Saigon city center:
+## Núi Thị Vải 
+Location: 
+Two times, second time I found the "peak" which is 50 meter below the peak and 200 meters away. Height: 467 meter, trip of about 1h40. 5.07 km distance. 913 kcal total. 
+
+- [[Núi Thị Vải I]] - 2025-06-20 - top but no cairn
+- [[Núi Thị Vải II]] - 2025-07-24 - top, loop 1h40, picture of cairn 50 m below peak
 ## Núi Đinh
 Been there two times, the second time finishing the red 6 hour loop. Did it in 4:57 on 2025-07-07 and burned 2048 kcal total. 14.97 km distance, elevation gain 706 meter. Maximum height: 518 m
 
 - [[Núi Đinh I]] - 2023-11-26 - more than 6 hours with shortcut
 - [[Núi Đinh II]] - 2025-07-07 - finished loop after 4h57
 
-## Núi Thị Vải 
-Two times, second time I found the "peak" which is 50 meter below the peak and 200 meters away. Height: 467 meter, trip of about 1h40. 5.07 km distance. 913 kcal total. 
 
-- [[Núi Thị Vải I]] - - 2025-06-20 - top but no cairn
-- [[Núi Thị Vải II]] - 2025-07-24 - top, loop 1h40, picture of cairn 50 m below peak
 ## [[Black Virgin Mountain - Núi Bà Đen]]
 Now I've been there already 4 times! Here are a few things to consider:
 
