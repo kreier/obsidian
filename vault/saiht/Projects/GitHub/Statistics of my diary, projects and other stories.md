@@ -63,3 +63,10 @@ First let's parse or update the parsed CSV files
 - update_db_projects.py
 	- The source it here saiht.de/projects and hopefully updated
 
+## History
+### 2025-12-18 Github repository started
+The link is https://github.com/kreier/statistics-diary.
+### 2025-12-28 First automated Github-actions bot statistic
+I'm happy that now with every successful push to the quartz repository a new Github action starts the update script in the statistics-diary repository. Automation v1.1
+### 2026-02-28 Agentic engineering with Jules from Google
+With one big script, written by Gemini 2.5 Pro (and later Gemini 3 Flash) I get a heatmap of my activities on 4 web locations back from 1975. There are some mistakes, but the parsing get's better. The new repository is https://hviovn.github.io/diary-statistic/
