@@ -38,6 +38,6 @@ Working on my website [[saiht.de]] this paper falls into my hand. That's now 5 y
 | 29. - 30. November          | Annettbesuch in Leipzig                                                  |
 | 6. Dezember                 | Bowlingabend                                                             |
 ## 2026-03-01 Rediscover with a Heatmap
-As part of collecting [[Statistics of my diary, projects and other stories]] I had created a second repository with the help of Agentic Engineering Jules. One spot there caught my attention, and I rediscover this 29 year old gem!
+As part of collecting [[Statistics of my diary, projects and other stories]] I had created a second repository with the help of Agentic Engineering Jules. One spot there caught my attention, and I rediscover this 29 year old gem! Here at https://hviovn.github.io/diary-statistic/
 ## Reference
 The original can be found at https://saiht.de/legacy/urlaub/1997.html

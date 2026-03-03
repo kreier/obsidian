@@ -1,4 +1,5 @@
 It is a popular sport in western countries. Vietnam is slowly catching up. More people start looking for an escape of the city on weekends. Some popular destinations I tested myself, ordered by distance from the Saigon city center:
+
 ## Núi Thị Vải 
 Location: 
 Two times, second time I found the "peak" which is 50 meter below the peak and 200 meters away. Height: 467 meter, trip of about 1h40. 5.07 km distance. 913 kcal total. 
@@ -14,7 +15,7 @@ Been there two times, the second time finishing the red 6 hour loop. Did it in 4
 
 ## [[Black Virgin Mountain - Núi Bà Đen]]
 Now I've been there already 4 times! Here are a few things to consider:
-
+![[2026-02-16_nui_ba_den.jpg]]
 If you are not trained it will take at least 4 hours to get up to the top. We tested on February 16th, 2026. We stopped halfway. Another thing is to consider the time and distance. From 2026 on you have to start your ascend before 11 am. A park warden let's you enter your name and phone number and size of group before you can climb up.
 
 - Black Virgin Mountain I - 2021/12/24 - Covid
