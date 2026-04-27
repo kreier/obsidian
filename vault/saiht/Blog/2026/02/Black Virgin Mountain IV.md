@@ -12,5 +12,5 @@ waited 20 minutes for next bus, then 15 minutes ride to trail head
 Started hiking 8:53, walked 5.115 km, returned 13:14 after 4:20. We turned around about 11:00 - half way!
 
 
-
-[[Black Virgin Mountain - Núi Bà Đen]]
+## References
+- [[Black Virgin Mountain - Núi Bà Đen]]

@@ -1,11 +1,11 @@
 ---
 title: Digital Garden
 ---
-This vault is *another* attempt to document and structure some of [[My Projects|my projects]], [[My Websites|websites]], smaller events and ideas from [[About the blog|blog]] and a general overview of events in my life from [[My Diary|my diary]] plus some experiences in my [[Leisure|leisure time]] into **one** cohesive place. Over time I want to include some [[Travel history|travel stories]]. As of 2026/01/01 this vault has 91 files with a total of 38831 words that would take 2h26 to read.
+This vault is *another* attempt to document and structure some of [[My Projects|my projects]], [[My Websites|websites]], smaller events and ideas from [[About the blog|blog]] and a general overview of events in my life from [[My Diary|my diary]] plus some experiences in my [[Leisure|leisure time]] into **one** cohesive place. Over time I want to include some [[Travel history|travel stories]]. As of 2026/04/24 this vault has 146 md and 437 files total. These contain 69181 words, it would take 4h21 to read all.
 
 Here are a few highlights from the 5 categories:
 ## 1. [[My Projects]]
-My life is filled with unfinished projects and new ideas, that I continue to start pursuing. Documenting and organizing these projects, maybe even to finish them, is just another project. On GitHub I started projects in 2018, and by 2020 there were already 35 projects. At the end of 2025 this has grown to more than 170 repositories, with some (like [timeline](https://github.com/kreier/timeline)) having hundreds of commits. 
+My life is filled with unfinished projects and new ideas, that I continue to start pursuing. Documenting and organizing these projects, maybe even to finish them, is just another project. On GitHub I started projects in 2018, and by 2020 there were already 35 projects. At the end of 2025 this has grown to more than 180 repositories, with some (like [timeline](https://github.com/kreier/timeline)) having hundreds of commits. 
 
 ![[timeline20250925_5.9.jpg]]
 
@@ -23,7 +23,9 @@ Apart from these 4 websites I had the following domains for some time: More deta
 ## 3. [[Travel history]]
 It is good from time to time to reflect on the good things one received in life. That is certainly true for journeys to remote places and time with friends. Both the travel itself as time remembering can fill us with gratitude.<br />
 <img src="Diary/files/1x1.png" width="20%"><img src="Travel/files/2026-01-01_travelhistory.png" width="60%"><br />
-Documenting my travels was already a part of my first edition of [[saiht.de]] in 1999. For the trip to Asia in 1998 I bought a book with black pages, since the contrast to the images let them appear more vibrant. A lot has happened since then.
+Documenting my travels was already a part of my first edition of [[saiht.de]] in 1999. For the trip to Asia in 1998 I bought a book with black pages, since the contrast to the images let them appear more vibrant. A lot has happened since then. Like travelling by [[Motorbike in Vietnam]].
+### [[Leisure]]
+Many of my leisure activities include travelling with friends. That's why this part is included here. It includes [[Hiking in Vietnam]], 
 ## 4. [[About the blog]]
 Not everything is a **project**, or belongs to the **travel** category. But it's worth remembering, to reflect on one's course in life. So I write down some notes about it [in a blog](https://saiht.de/blog).
 

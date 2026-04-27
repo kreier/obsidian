@@ -2,7 +2,7 @@ Produces a lot of graphics cards. Now market leader (team green) and most valuab
 
 That's so 2024. For a brief period it was the most valuable company on the planet. And even 2025 the AI gold rush is going on. With no sign of slowing down in 2026.
 
-I tried AMD graphics cards and integrated graphics cards. For Intel integrated the memory bandwidth is not fast enough. And getting things going with ROCm on AMD is challenging. My RX 6600 was not that old, but not supported. Much older 1060 and 1070 from Nvidia had no driver problem whatsoever. Not even the P106-100 and P104-100 for LLMs.
+I tried AMD graphics cards and integrated graphics cards. For Intel integrated the memory bandwidth is not fast enough. And getting things going with ROCm on AMD is challenging. My RX 6600 was not that old, but **not supported**. Much older 1060 and 1070 from Nvidia had no driver problem whatsoever. Not even dedicated mining GPUs with crippled PCIe lanes and speed (only Gen1) the P106-100 and P104-100 for LLMs. So I used the latter ones in my [[Penta-GPU server i3-6100]].
 
 See my results in benchmark:
 

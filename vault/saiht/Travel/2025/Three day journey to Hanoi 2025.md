@@ -17,3 +17,11 @@ The next 108 km from Bắc Trà My to tt. Thạnh Mỹ, crossing the Hiệp Hòa
 And getting closer to Danang it started raining again, and did not stop even until 150 milometers late until 5:30 PM in Huế. So I got a bed in a Nhà Nghỉ and prepared for the Saturday evening zoom meeting.
 ## 10-26 Hà Nội 650.4 km
 It kept raining in the morning until around lunch time or 373 km later, when I arrived in Vinh. Then it stopped, and I could dry in the wind while finishing the 3-day trip to Hanoi.
+## Road trip Saigon - Hanoi II
+This story of 15 days is split into 3 parts, here are the next 2: [[One week in Hanoi and Sapa 2025]] and [[Ha Giang loop a second time in 2025]].
+
+## References
+- [[Motorbike in Vietnam]] 
+- **Part I:** 2025-10-24 to 10-27: [[Three day journey to Hanoi 2025]], 1695 km
+- **Part II:** 2025-10-28 to 11-01: [[One week in Hanoi and Sapa 2025]], 1507 km
+- **Part III:** 2025-11-02 to 11-07: [[Ha Giang loop a second time in 2025]], 2073 km 

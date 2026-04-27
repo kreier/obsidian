@@ -1,4 +1,4 @@
-Actually, the correct address is [people.physik.hu-berlin.de/~kreier](https://people.physik.hu-berlin.de/~kreier) but as title for a markdown file no slash can be included.
+<img src="humboldt.gif" width="15%" align="right">Actually, the correct address is [people.physik.hu-berlin.de/~kreier](https://people.physik.hu-berlin.de/~kreier). But for a title in markdown the tilde symbol `~` and a the slash symbol `/` can't be included.
 
 We got this webspace provided by our university when we started to study there. And the faculty of physics keeps providing this page even after we left the university. Many continue to study there, get their PhD. So the user name does not include any hint of "student" (as does my current student account 51.01.615.002 at the Su Pham university). Now 26 years after starting to study there I still have both the email and my personal website there.
 

@@ -2,15 +2,15 @@
 Over the years I created a few websites. And in time I had to consolidate some, and save the content in a subfolder for documentation. My goal of 2025 is to have only [saiht.de](https://saiht.de) available for personal information and [kreier.org](https://kreier.org) for work related information and projects.
 ## Domains still active - 3 are left 
 ### Private: [[saiht.de]] 1999-2026
-<img src="Projects/GitHub/files_github/2026-01-01_logo_saiht.de.png" width="10%" align="right">This continues to be my personal Website. I started in 1999 with a few pages in German, and used frames to separate the navigation from the content. This approach is long deprecated. I tried to improve the site design to comply HTML 4.01, later added CSS and responsive webdesign. With a new hosting provider I had access to PHP and a database, so I could include WordPress. But look for yourself, or read more details in this vault:
+<img src="Projects/GitHub/files_github/2026-01-01_logo_saiht.de.png" width="10%" align="right">This continues to be my personal Website. I started in 1999 with a few pages in German, and used frames to separate the navigation from the content. This approach is long deprecated. I tried to improve the site design to comply HTML 4.01, later added CSS and responsive web design. With a new hosting provider I had access to PHP and a database, so I could include WordPress. But look for yourself, or read more details in this vault:
 - Website: [saiht.de](https://saiht.de) 
 - Site in this Obsidian vault: [[saiht.de]] gives a few more details and history.
 ### Academic: [[people.physik.hu-berlin.de-kreier]] 2000-2026
-This webspace is provided by my university. And since it is hosted in the **Institutrechenzentrum** with some ultrafast fiber internet connection (we do research, after all) this should serve all my purposes well. A little more background at [[people.physik.hu-berlin.de-kreier]].
+<img src="humboldt.gif" align="right" width="10%">This webspace is provided by my university. And since it is hosted in the **Institutrechenzentrum** with some ultrafast fiber internet connection (we do research, after all) this should serve all my purposes well. A little more background at [[people.physik.hu-berlin.de-kreier]].
 
 Not much has changed since 2008 here: [people.physik.hu-berlin.de/~kreier/](https://people.physik.hu-berlin.de/~kreier/).
 ### Professional: [[kreier.org]] 2018-2026
-<img src="Projects/GitHub/files_github/2026-01-01_logo_kreier.org.png" width="10%" align="right">With my new job at AISVN I started to create my own website to provide student material for my IB Physics course. In the end this turned out to be very time consuming!
+<img src="Projects/GitHub/files_github/2026-01-01_logo_kreier.org.png" width="10%" align="right">With my new job at [[AISVN]] I started to create my own website to provide student material for my IB Physics course. In the end this turned out to be very time consuming!
 
 Some details about the creation are written at [[kreier.org]]. And the current iteration at [https://kreier.org](https://kreier.org).
 

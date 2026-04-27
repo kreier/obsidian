@@ -12,9 +12,10 @@ Sometimes there are some updates in Quartz that should be included in the obsidi
 
 1. `npx quartz update`
 2. `npx quartz sync`
-3. `npx quartz build --serve`
+3. `npx quartz build --watch`
+4. `npx serve public`
 
-The first checks for updates in Quartz and downloads updates to the codebase from the original source the Quartz repository was cloned from. The second makes a Github push for edits to the personalized copy with content in the **/content** folder. And the third one actually starts the quartz web server and creates the static website under **/public** and serves it at http://localhost:8080 to investigate
+The first checks for updates in Quartz and downloads updates to the codebase from the original source the Quartz repository was cloned from. The second makes a Github push for edits to the personalized copy with content in the **/content** folder. And the third one actually starts the quartz web server and creates the static website under **/public** and serves it at http://localhost:3000 to investigate changes and proper rendering.
 ## Statistics of this Obsidian vault
 Some first steps with Obsidian date back to [[First use of Obsidian]], but I actually started the current version in combination with Quartz 4.0 on October 27th, 2025. It was my [[Official start of my study at Su Pham and Extension of a few projects]], my first day of study - while being in Hanoi. Some local statistics is immediately available with the novel word count. I installed this one on December 13, 2025, with [[Novel Word Count and Quartz Update]] from Saigon.
 

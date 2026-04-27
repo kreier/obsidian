@@ -1,7 +1,7 @@
 ---
 date: 2025-10-27
 ---
-Today I had my first meeting with my classmates for my 4 year bachelor _Ngành Tiếng Việt và Văn Hóa Việt Nam_ (**Vietnamese Language and Culture of Vietnam**) at the _Trường Đại học Sư phạm TP. Hồ Chí Minh_ (**Su Pham university**). I am in Hanoi for a wedding and will only return to Saigon on November 7th. Two other students are still in China and wait for their visa. So the meeting was held on Google Meet. Well, Google products don't work in China, neither does zoom. Maybe Microsoft Teams will work on Wednesday.
+Today I had my first meeting with my classmates for my 4 year bachelor _Ngành Tiếng Việt và Văn Hóa Việt Nam_ ([[Vietnamese Language and the Culture of Vietnam]]) at the _Trường Đại học Sư phạm TP. Hồ Chí Minh_ (**Su Pham university**). I am in Hanoi for a wedding and will only return to Saigon on November 7th. Two other students are still in China and wait for their visa. So the meeting was held on Google Meet. Well, Google products don't work in China, neither does zoom. Maybe Microsoft Teams will work on Wednesday.
 
 It was also another step to update this vault. The pages [[My Websites]], [[My Projects]] and [[About the blog]] were created and linked. I think I make this a separate subcategory different from Blog, since it documents the progressing steps of Obsidian and Quartz. Canvas and Graphs for example are not yet supported in Quartz v4 out of the box.
 

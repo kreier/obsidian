@@ -25,7 +25,7 @@ There are probably no surviving fragments of this document. Since the fourth Chi
 
 ## 1479 Đại Việt sử ký toàn thư
 
-The Đại Việt sử ký toàn thư ([chữ Hán](https://en.wikipedia.org/wiki/Ch%E1%BB%AF_H%C3%A1n): 大越史記全書; Vietnamese: [[ɗâːjˀ vìət ʂɨ᷉ kǐ twâːn tʰɨ]](https://en.wikipedia.org/wiki/Help:IPA/Vietnamese); Complete Annals of Đại Việt) is the official national chronicle of the [Đại Việt](https://en.wikipedia.org/wiki/%C4%90%E1%BA%A1i_Vi%E1%BB%87t), that was originally compiled by the royal historian [Ngô Sĩ Liên](https://en.wikipedia.org/wiki/Ng%C3%B4_S%C4%A9_Li%C3%AAn) under the order of the Emperor [Lê Thánh Tông](https://en.wikipedia.org/wiki/L%C3%AA_Th%C3%A1nh_T%C3%B4ng) and was finished in 1479 during the [Lê period](https://en.wikipedia.org/wiki/L%C3%AA_dynasty). 
+The Đại Việt sử ký toàn thư ([chữ Hán](https://en.wikipedia.org/wiki/Ch%E1%BB%AF_H%C3%A1n): 大越史記全書; Vietnamese: [ɗâːjˀ vìət ʂɨ᷉ kǐ twâːn tʰɨ](https://en.wikipedia.org/wiki/Help:IPA/Vietnamese); Complete Annals of Đại Việt) is the official national chronicle of the [Đại Việt](https://en.wikipedia.org/wiki/%C4%90%E1%BA%A1i_Vi%E1%BB%87t), that was originally compiled by the royal historian [Ngô Sĩ Liên](https://en.wikipedia.org/wiki/Ng%C3%B4_S%C4%A9_Li%C3%AAn) under the order of the Emperor [Lê Thánh Tông](https://en.wikipedia.org/wiki/L%C3%AA_Th%C3%A1nh_T%C3%B4ng) and was finished in 1479 during the [Lê period](https://en.wikipedia.org/wiki/L%C3%AA_dynasty). 
 
 There seems to be no documents or writings from this time that survived to this day. If there is a reference to some fragments in a special library in Hanoi (or elsewhere), please comment here.
 
